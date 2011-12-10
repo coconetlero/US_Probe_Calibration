@@ -26,8 +26,9 @@ public:
 private:
     Ui::MainWindow *ui;
     
-    QString imagePath;
-    QString maskPath;
+    /** \brief The filename of each selected image */
+    QStringList imagesFilenames;
+    
     QString textOnTextArea;
     
     /**
@@ -45,10 +46,7 @@ private slots:
      */
     void addImages();
     
-    /**
-     *Add mask folder to application
-     */
-    void addMasks();
+    
 };
 
 
