@@ -87,7 +87,6 @@
      <string>File</string>
     </property>
     <addaction name="actionAdd_Images_Folder"/>
-    <addaction name="actionAdd_Mask_Folder"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
@@ -96,7 +95,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionAdd_Images_Folder">
    <property name="text">
-    <string>Add Images Folder</string>
+    <string>Open Image</string>
    </property>
   </action>
   <action name="actionAdd_Mask_Folder">
