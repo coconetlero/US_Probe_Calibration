@@ -97,6 +97,9 @@
    <property name="text">
     <string>Open Image</string>
    </property>
+   <property name="toolTip">
+    <string>Open Image or images</string>
+   </property>
   </action>
   <action name="actionAdd_Mask_Folder">
    <property name="text">
