@@ -42,10 +42,15 @@ private:
 private slots:
     
     /**
-     * Add image folder to application
+     * \brief Add image folder to application
      */
     void addImages();
     
+    /**
+     * \brief Implements a ultrasound 3D probe calibration, for navigate with the 
+     * probe
+     */
+    void probeCalibration();
     
 };
 

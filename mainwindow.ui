@@ -39,19 +39,6 @@
     </size>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QWidget" name="imageWidget" native="true">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>13</horstretch>
-        <verstretch>10</verstretch>
-       </sizepolicy>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="0">
      <widget class="QTextEdit" name="textEdit">
       <property name="sizePolicy">
@@ -68,6 +55,19 @@
       </property>
       <property name="readOnly">
        <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="imageWidget" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>13</horstretch>
+        <verstretch>10</verstretch>
+       </sizepolicy>
       </property>
      </widget>
     </item>
@@ -90,7 +90,14 @@
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
+   <widget class="QMenu" name="menuProcess">
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionUS_Probe_Calibration"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuProcess"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionAdd_Images_Folder">
@@ -101,14 +108,14 @@
     <string>Open Image or images</string>
    </property>
   </action>
-  <action name="actionAdd_Mask_Folder">
-   <property name="text">
-    <string>Add Mask Folder</string>
-   </property>
-  </action>
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionUS_Probe_Calibration">
+   <property name="text">
+    <string>US Probe Calibration</string>
    </property>
   </action>
  </widget>
@@ -148,18 +155,18 @@
    </hints>
   </connection>
   <connection>
-   <sender>actionAdd_Mask_Folder</sender>
+   <sender>actionUS_Probe_Calibration</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
-   <slot>addMasks()</slot>
+   <slot>probeCalibration()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>
      <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>322</x>
-     <y>137</y>
+     <x>330</x>
+     <y>311</y>
     </hint>
    </hints>
   </connection>
@@ -167,5 +174,6 @@
  <slots>
   <slot>addImages()</slot>
   <slot>addMasks()</slot>
+  <slot>probeCalibration()</slot>
  </slots>
 </ui>

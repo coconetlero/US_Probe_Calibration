@@ -1,1 +1,9 @@
 Implements a method for calibrate an ultrasound probe, using the ITK and VTK toolkits
+The GUI uses Qt
+
+This uses 
+
+ITK - 3.20
+VTK - 5.8
+Qt - 4.8
+

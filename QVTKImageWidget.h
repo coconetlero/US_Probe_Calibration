@@ -52,7 +52,15 @@ public:
     /**
      * Sets and display an image from a given image path
      */
-    void setAndDisplayImage(QString imagePath);
+    void setAndDisplayImage(QString imageFilename);
+    
+    
+    /**
+     * \brief Set and display multiple images from a given images filenames
+     * \param[in] a QStringList that contain the filename of each image 
+     */
+    void setAndDisplayMultipleImages(QStringList filenames);
+    
     
     
     /***************************
@@ -103,6 +111,8 @@ public:
      */
     void setYPicked(int yPosition);
     
+    
+    
     /**
      * \brief Return this widget image viewer
      * \param[out] imageViewer vtkImageViewer2 target 2D image.
@@ -151,6 +161,8 @@ private:
     
     /** current y coordinate of picked position over the image */
     int yPicked;
+    
+    
     
     /**
      * Set the needed image properties (pixelType, imageType, num of dimensions)     
