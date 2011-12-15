@@ -60,7 +60,7 @@ void MainWindow::addImages()
             ui->imageSlider->setTickInterval(1);
             ui->imageSlider->setRange(0, imagesFilenames.size() - 1);
             
-            displayWidget->setAndDisplayMultipleImages(imagesFilenames);             
+            this->displayWidget->setAndDisplayMultipleImages(imagesFilenames);             
             for (int i = 0; i < imagesFilenames.size(); i++)
             {               
                 addLogText("Loading: <b>" + imagesFilenames.at(i) + "</b>");
@@ -85,8 +85,7 @@ void MainWindow::probeCalibration()
 
 void MainWindow::displaySelectedImage(int idx) 
 {
-
-    std::cout << idx << std::endl;
+    this->displayWidget->displaySelectedImage(idx);
 }
 
 

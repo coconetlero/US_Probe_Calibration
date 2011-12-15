@@ -56,11 +56,18 @@ public:
     
     
     /**
-     * \brief Set and display multiple images from a given images filenames
+     * \brief Set and display multiple images from a given images filenames. Display 
+     * the image corresponding to the first element on the filenmaes list.
      * \param[in] a QStringList that contain the filename of each image 
      */
     void setAndDisplayMultipleImages(QStringList filenames);
     
+    
+    /**
+     * \brief display an image stored in this imageStack. 
+     * \param[in] the index in the stack position of the image 
+     */
+    void displaySelectedImage(int idx);
     
     
     /***************************
@@ -135,10 +142,10 @@ private:
     /** The VTK image to display i this window */
     vtkSmartPointer <vtkImageData> vtkImage;    
     
-    /** \brief A vtkImageData Array for keep the image references when load an 
+    /** \brief A vtkImageData Vector for keep the image references when load an 
      * image stack.
      */
-    vtkSmartPointer<vtkImageData>* imageStack;
+    std::vector< vtkSmartPointer<vtkImageData> > imageStack;
 
     /** The type of the image components RGB, scalar, etc */
     std::string pixelType;

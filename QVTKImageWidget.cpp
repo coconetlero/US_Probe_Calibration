@@ -62,13 +62,6 @@ QVTKImageWidget::~QVTKImageWidget()
     this->vtkImage = NULL;
     this->qvtkWidget = NULL;
     this->imageViewer = NULL;
-    
-    // delete an imageStack
-    if (imageStack != NULL)
-    {
-        this->imageStack = NULL;
-        delete[] this->imageStack;
-    }
 }
 
 
@@ -136,9 +129,8 @@ void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
 }
 
 void QVTKImageWidget::setAndDisplayMultipleImages(QStringList filenames)
-{       
-    
-   this->imageStack = new vtkSmartPointer<vtkImageData>[filenames.size()];
+{   
+    this->imageStack.reserve(filenames.size());
     
     for (int i = 0; i < filenames.size(); i++) 
     {
@@ -151,13 +143,13 @@ void QVTKImageWidget::setAndDisplayMultipleImages(QStringList filenames)
         reader->Update();
         
         vtkSmartPointer<vtkImageData> image = reader->GetOutput();
-        imageStack[i] = image;
-
+        this->imageStack.push_back(image);
+        
         readerFactory = NULL;
         reader = NULL;    
         
     }        
-    displayImage(imageStack[0]);    
+    displayImage(imageStack.at(0));    
 }
 
 
@@ -205,6 +197,16 @@ void QVTKImageWidget::displayImage(vtkImageData *image)
     // render image viewer
     imageViewer->Render();
 }
+
+
+void QVTKImageWidget::displaySelectedImage(int idx)
+{
+    if (!imageStack.empty()) {
+        if (idx >= 0 && idx < imageStack.size())
+            displayImage(imageStack[idx]);
+    }
+}
+
 
 
 void QVTKImageWidget::setImageProperties(QString path, bool verbose)
