@@ -132,8 +132,13 @@ private:
     /** The RGB image displayed for this widget */
     RGBImageType::Pointer rgbItkImage;
     
-    /** The VTK image to display in this window */
+    /** The VTK image to display i this window */
     vtkSmartPointer <vtkImageData> vtkImage;    
+    
+    /** \brief A vtkImageData Array for keep the image references when load an 
+     * image stack.
+     */
+    vtkSmartPointer<vtkImageData>* imageStack;
 
     /** The type of the image components RGB, scalar, etc */
     std::string pixelType;
