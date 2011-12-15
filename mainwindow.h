@@ -46,6 +46,11 @@ private slots:
      */
     void addImages();
     
+    /** 
+     * \brief Display selected image with the image slider
+     */
+    void displaySelectedImage(int idx);
+    
     /**
      * \brief Implements a ultrasound 3D probe calibration, for navigate with the 
      * probe

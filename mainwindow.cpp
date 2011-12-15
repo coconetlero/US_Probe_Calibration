@@ -32,8 +32,7 @@ MainWindow::~MainWindow()
 }
 
 
-void
-MainWindow::addImages()
+void MainWindow::addImages()
 {
     
     //    this->imagePath = QFileDialog::getExistingDirectory(); 
@@ -45,6 +44,8 @@ MainWindow::addImages()
     {
         if (imagesFilenames.size() == 1)
         {
+            ui->imageSlider->hide();
+            
             addLogText("Loading: <b>" + imagesFilenames.first() + "</b>");
             displayWidget->setAndDisplayImage(imagesFilenames.first());
             
@@ -55,6 +56,10 @@ MainWindow::addImages()
         else
         {
             // if selected multiple files
+            ui->imageSlider->show();
+            ui->imageSlider->setTickInterval(1);
+            ui->imageSlider->setRange(0, imagesFilenames.size() - 1);
+            
             displayWidget->setAndDisplayMultipleImages(imagesFilenames);             
             for (int i = 0; i < imagesFilenames.size(); i++)
             {               
@@ -72,15 +77,20 @@ MainWindow::addImages()
 }
 
 
-void
-MainWindow::probeCalibration()
+void MainWindow::probeCalibration()
 {
     std::cout << "probe calibration" << std::endl;
 }
 
 
-void
-MainWindow::addLogText(QString str)
+void MainWindow::displaySelectedImage(int idx) 
+{
+
+    std::cout << idx << std::endl;
+}
+
+
+void MainWindow::addLogText(QString str)
 {
     ui->textEdit->append(str);
     
@@ -89,3 +99,7 @@ MainWindow::addLogText(QString str)
     cursor.movePosition(QTextCursor::End);
     ui->textEdit->setTextCursor(cursor);
 }
+
+
+
+

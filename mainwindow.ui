@@ -186,10 +186,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>imageSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>displaySelectedImage(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>127</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>addImages()</slot>
   <slot>addMasks()</slot>
   <slot>probeCalibration()</slot>
+  <slot>displaySelectedImage(int)</slot>
  </slots>
 </ui>
