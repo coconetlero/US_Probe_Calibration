@@ -66,14 +66,7 @@ QVTKImageWidget::~QVTKImageWidget()
 
 
 void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
-{
-    // if the image is alredy defined 
-    itkImage = NULL;
-    rgbItkImage = NULL;
-    vtkImage = NULL;
-    
-    this->setImageProperties(imageFilename, true);
-    
+{   
     // reads a vtkImage for display purposes
     vtkSmartPointer <vtkImageReader2Factory> readerFactory =
     vtkSmartPointer <vtkImageReader2Factory>::New();
@@ -84,22 +77,11 @@ void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
     reader->SetFileName(imageFilename.toAscii().data());  
     reader->Update();
     
-    this->vtkImage = reader->GetOutput();
-    
-    int* dim = vtkImage->GetDimensions();
-    
-    std::cout << dim[0] << "," << dim[1] << "," << dim[2] << std::endl;
-    
-    
-    this->displayImage(vtkImage);
-    
-    
+    this->setAndDisplayImage(reader->GetOutput());    
     
     readerFactory = NULL;
     reader = NULL;
     
-    
-    this->setImageProperties(imageFilename, true);
     
     
     
@@ -129,6 +111,25 @@ void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
     //    }
     
 }
+
+
+void QVTKImageWidget::setAndDisplayImage(vtkSmartPointer<vtkImageData> image)
+{
+    // if the image is alredy defined 
+    itkImage = NULL;
+    rgbItkImage = NULL;
+    vtkImage = NULL;
+    
+    this->vtkImage = image;    
+    
+    int* dim = vtkImage->GetDimensions();    
+    std::cout << dim[0] << "," << dim[1] << "," << dim[2] << std::endl;
+   
+    this->setImageProperties(true);
+    
+    this->displayImage(vtkImage);    
+}
+
 
 void QVTKImageWidget::setAndDisplayMultipleImages(QStringList filenames)
 {   
@@ -204,37 +205,23 @@ void QVTKImageWidget::displayImage(vtkImageData *image)
 void QVTKImageWidget::displaySelectedImage(int idx)
 {
     if (!imageStack.empty()) {
-        if (idx >= 0 && idx < imageStack.size())
+        if (idx >= 0 && idx < (int)imageStack.size())
             displayImage(imageStack[idx]);
     }
 }
 
 
-void QVTKImageWidget::setImageProperties(QString path, bool verbose)
+void QVTKImageWidget::setImageProperties(bool verbose)
 {
-    std::string filename = path.toAscii().data();
-    
-    // Obtain image information
-    typedef itk::ImageIOBase::IOComponentType ScalarPixelType;
-    
-    itk::ImageIOBase::Pointer imageIO =
-    itk::ImageIOFactory::CreateImageIO(filename.c_str(), itk::ImageIOFactory::ReadMode);
-    
-    imageIO->SetFileName(filename);
-    imageIO->ReadImageInformation();
-    
-    pixelType = imageIO->GetComponentTypeAsString(imageIO->GetComponentType());
-    imageType = imageIO->GetPixelTypeAsString(imageIO->GetPixelType());
-    numDimensions = imageIO->GetNumberOfDimensions();
-    
+    this->numDimensions = this->vtkImage->GetDataDimension();
+    this->pixelType = this->vtkImage->GetScalarTypeAsString();
+    this->imageType = this->vtkImage->GetNumberOfScalarComponents(); 
     
     if (verbose)
     {
         std::cout << "Pixels type: " << pixelType << std::endl;
         std::cout << "Image type: " << imageType << std::endl;
         std::cout << "Num of Dimensions: " << numDimensions << std::endl;
-        //        std::cout << "x = " << dim[0] << std::endl;
-        //        std::cout << "y = " << dim[1] << std::endl;
     }
 }
 
@@ -269,15 +256,23 @@ void QVTKImageWidget::setYPicked(int yPosition)
 }
 
 
-QString QVTKImageWidget::getImageType()
+QString QVTKImageWidget::getPixelType()
 {
-    return QString(imageType.data());
+    return QString(pixelType.c_str());
 }
 
 
-QString QVTKImageWidget::getPixelType()
+QString QVTKImageWidget::getImageType()
 {
-    return QString(pixelType.data());
+    if (imageType == 1) {
+        return QString("grayscale");
+    } 
+    else if (imageType == 3) {
+        return QString("rgb");
+    }
+    else {
+        return QString("-");
+    }    
 }
 
 

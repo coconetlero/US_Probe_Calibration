@@ -16,14 +16,12 @@
 #include <itkImage.h>
 #include <itkRGBPixel.h>
 
-#include <vtkRenderer.h>
-
-#include <vtkRenderWindow.h>
 #include <vtkSmartPointer.h>
-#include <vtkCamera.h>
-
-#include <vtkImageActor.h>
 #include <vtkImageData.h>
+#include <vtkRenderWindow.h>
+#include <vtkRenderer.h>
+#include <vtkCamera.h>
+#include <vtkImageActor.h>
 
 #include <vtkCommand.h>
 #include <vtkImageViewer2.h>
@@ -53,6 +51,13 @@ public:
      * Sets and display an image from a given image path
      */
     void setAndDisplayImage(QString imageFilename);
+    
+    
+    /**
+     * \brief Sets and display the given vtkImageData
+     * \param[in] a vtkImageData to set and display
+     */
+    void setAndDisplayImage(vtkSmartPointer<vtkImageData> image);
     
     
     /**
@@ -147,11 +152,11 @@ private:
      */
     std::vector< vtkSmartPointer<vtkImageData> > imageStack;
 
-    /** The type of the image components RGB, scalar, etc */
+    /** The type of the image pixels */
     std::string pixelType;
     
-    /** The type of the image pixels */
-    std::string imageType;
+    /** the number of scalar components in the image 1 => grayscale, 3 => rgb */
+    int imageType;
     
     /** The number of the image dimensions */
     size_t numDimensions;
@@ -179,7 +184,7 @@ private:
     /**
      * Set the needed image properties (pixelType, imageType, num of dimensions)     
      */
-    void setImageProperties(QString path, bool verbose);
+    void setImageProperties(bool verbose);
     
     /**
      * Display the given vtkImage
