@@ -79,7 +79,9 @@ void MainWindow::addImages()
 void MainWindow::probeCalibration()
 {
     ProbeCalibrationDialog probeCalibration(this);
+    probeCalibration.setImage(displayWidget->getImageViewer()->GetInput());
     probeCalibration.exec();
+    
 }
 
 
