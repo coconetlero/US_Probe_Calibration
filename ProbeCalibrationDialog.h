@@ -22,10 +22,17 @@ public:
     ProbeCalibrationDialog(QWidget* parent = 0);    
     virtual ~ProbeCalibrationDialog();
     
+
+    
 private:
     
     Ui::ProbeCalibrationDialog ui;
     
+private slots:
+    /**
+     * \brief crop the 
+     */
+    void crop();
 };
 
 

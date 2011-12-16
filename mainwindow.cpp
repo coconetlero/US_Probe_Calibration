@@ -78,8 +78,6 @@ void MainWindow::addImages()
 
 void MainWindow::probeCalibration()
 {
-    std::cout << "probe calibration" << std::endl;
-    
     ProbeCalibrationDialog probeCalibration(this);
     probeCalibration.exec();
 }
