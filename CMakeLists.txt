@@ -32,11 +32,12 @@ INCLUDE_DIRECTORIES(
 )
  
 # Set your files and resources here
-SET(AppSrcs main.cpp mainwindow.cpp QVTKImageWidget.cpp QVTKImageWidgetCommand.cpp)
+SET(AppSrcs main.cpp mainwindow.cpp QVTKImageWidget.cpp QVTKImageWidgetCommand.cpp
+    ProbeCalibrationDialog.cpp)
     
-SET(AppHeaders mainwindow.h QVTKImageWidget.h QVTKImageWidgetCommand.h)
+SET(AppHeaders mainwindow.h QVTKImageWidget.h QVTKImageWidgetCommand.h ProbeCalibrationDialog.h)
     
-SET(AppUI mainwindow.ui)
+SET(AppUI mainwindow.ui ProbeCalibrationDialog.ui)
  
  
 # for generate qt aditional files 

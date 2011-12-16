@@ -1,8 +1,7 @@
 
-
-#include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "mainwindow.h"
+#include "ProbeCalibrationDialog.h"
 
 #include <QVBoxLayout>
 
@@ -70,7 +69,7 @@ void MainWindow::addImages()
     else
     {
         QErrorMessage errorMessage;
-        errorMessage.showMessage("No file specified for loading");
+        errorMessage.showMessage("No file or files specified for loading");
         errorMessage.exec();
         return;
     }
@@ -80,6 +79,9 @@ void MainWindow::addImages()
 void MainWindow::probeCalibration()
 {
     std::cout << "probe calibration" << std::endl;
+    
+    ProbeCalibrationDialog probeCalibration(this);
+    probeCalibration.exec();
 }
 
 

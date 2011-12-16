@@ -101,6 +101,8 @@ void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
     
     this->setImageProperties(imageFilename, true);
     
+    
+    
     //  // set itk image depending on the image type 
     //  // if image type is grayscale
     //  if (imageType.compare("scalar") == 0)
@@ -206,7 +208,6 @@ void QVTKImageWidget::displaySelectedImage(int idx)
             displayImage(imageStack[idx]);
     }
 }
-
 
 
 void QVTKImageWidget::setImageProperties(QString path, bool verbose)
