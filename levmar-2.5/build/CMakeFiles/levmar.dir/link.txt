@@ -1,0 +1,2 @@
+/usr/bin/ar cr liblevmar.a  CMakeFiles/levmar.dir/lm.o CMakeFiles/levmar.dir/Axb.o CMakeFiles/levmar.dir/misc.o CMakeFiles/levmar.dir/lmlec.o CMakeFiles/levmar.dir/lmbc.o CMakeFiles/levmar.dir/lmblec.o CMakeFiles/levmar.dir/lmbleic.o
+/usr/bin/ranlib liblevmar.a
