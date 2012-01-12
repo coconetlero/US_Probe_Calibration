@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProbeCalibrationWidget</class>
+ <widget class="QWidget" name="ProbeCalibrationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>427</width>
+    <height>309</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Probe Calibration Setup</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="7">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="columnCount">
+      <number>3</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>55</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>10</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>-1</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Type of Depth of US:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="radioButton_4">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_6">
+         <property name="text">
+          <string>6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_5">
+         <property name="contextMenuPolicy">
+          <enum>Qt::NoContextMenu</enum>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_8">
+         <property name="text">
+          <string>8</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cropButton">
+       <property name="text">
+        <string>Crop Images</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="rotationsButton">
+     <property name="text">
+      <string>Load Rotations File</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="rotationsLabel">
+     <property name="text">
+      <string>No rotations file loaded</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="translationsButton">
+     <property name="text">
+      <string>Load Translations File</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLabel" name="translationsLabel">
+     <property name="text">
+      <string>No translations file loaded</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="calibrateButton">
+     <property name="text">
+      <string>Calibrate Probe</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="cancelButton">
+     <property name="text">
+      <string>Cancel </string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cropButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProbeCalibrationWidget</receiver>
+   <slot>crop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>297</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>calibrateButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProbeCalibrationWidget</receiver>
+   <slot>calibrate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rotationsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProbeCalibrationWidget</receiver>
+   <slot>loadRotationsFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>translationsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProbeCalibrationWidget</receiver>
+   <slot>loadTranslationsFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>151</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProbeCalibrationWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>crop()</slot>
+  <slot>calibrate()</slot>
+  <slot>loadRotationsFile()</slot>
+  <slot>loadTranslationsFile()</slot>
+ </slots>
+</ui>
