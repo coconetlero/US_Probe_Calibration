@@ -61,10 +61,14 @@ void QVTKImageWidgetCommand::Execute(vtkObject* caller, unsigned long event, voi
 
   vtkSmartPointer<vtkRenderWindowInteractor> interactor =
           Viewer->GetRenderWindow()->GetInteractor();
-
+  
+  // Get a shortcut to the pixel data.
+  vtkSmartPointer<vtkImageData> imageData = Viewer->GetInput();
+      
   // if the mose is moving inside the viewer
   if (event == vtkCommand::MouseMoveEvent)
     {
+                          
       int* windowPosition = interactor->GetEventPosition();
 
       int xWindow = windowPosition[0];
@@ -77,18 +81,24 @@ void QVTKImageWidgetCommand::Execute(vtkObject* caller, unsigned long event, voi
       int xImagePosition = vtkMath::Round(imPos[0]);
       int yImagePosition = vtkMath::Round(imPos[1]);
       int zImagePosition = Viewer->GetSlice();
-
-      std::string message = "Location: ( "
-              + vtkVariant(xImagePosition).ToString() + ", "
-              + vtkVariant(yImagePosition).ToString() + ", "
-              + vtkVariant(zImagePosition).ToString() + ")";
-
-
-      // for display pixel value when mouse move
       
-      // Get a shortcut to the pixel data.
-      vtkSmartPointer<vtkImageData> imageData = Viewer->GetInput();
+      int* extent = imageData->GetExtent();
+      int* dimension = imageData->GetDimensions();      
+      
+      int xClipPosition = xImagePosition - extent[0];
+      int yClipPosition = (dimension[1]-1) - (yImagePosition - extent[2]);
+      int zClipPosition = zImagePosition - extent[4];
+      
+      
+      std::string message = "Location: ( "
+              + vtkVariant(xClipPosition).ToString() + ", "
+              + vtkVariant(yClipPosition).ToString() + ", "
+              + vtkVariant(zClipPosition).ToString() + ")";
 
+      this->ImageWidget->setXPicked(xClipPosition);
+      this->ImageWidget->setYPicked(yClipPosition);
+      
+      // for display pixel value when mouse move
       // We have to handle different number of scalar components.
       switch (imageData->GetNumberOfScalarComponents())
         {
@@ -136,29 +146,34 @@ void QVTKImageWidgetCommand::Execute(vtkObject* caller, unsigned long event, voi
       style->OnMouseMove();
     }
 
-  // if the mouse left button is pressed    
-  if (event == vtkCommand::LeftButtonPressEvent)
-    {
-      int* windowPosition = interactor->GetEventPosition();
-
-      int xWindow = windowPosition[0];
-      int yWindow = windowPosition[1];
-      int zWindow = windowPosition[2];
-
-      this->Picker->Pick(xWindow, yWindow, zWindow, Viewer->GetRenderer());
-
-      double* imPos = this->Picker->GetPickPosition();
-      int xImagePosition = vtkMath::Round(imPos[0]);
-      int yImagePosition = vtkMath::Round(imPos[1]);
-      int zImagePosition = Viewer->GetSlice();
-
-      this->ImageWidget->setXPicked(xImagePosition);
-      this->ImageWidget->setYPicked(yImagePosition);
-
-      std::cout << "x: " << xImagePosition << " y: " << yImagePosition << std::endl;
-
-      vtkInteractorStyle *style = vtkInteractorStyle::SafeDownCast(interactor->GetInteractorStyle());
-      style->OnLeftButtonDown();
-    }
+//  // if the mouse left button is pressed    
+//  if (event == vtkCommand::LeftButtonPressEvent)
+//    {
+//      int* windowPosition = interactor->GetEventPosition();
+//
+//      int xWindow = windowPosition[0];
+//      int yWindow = windowPosition[1];
+//      int zWindow = windowPosition[2];
+//
+//      this->Picker->Pick(xWindow, yWindow, zWindow, Viewer->GetRenderer());
+//
+//      double* imPos = this->Picker->GetPickPosition();
+//      int xImagePosition = vtkMath::Round(imPos[0]);
+//      int yImagePosition = vtkMath::Round(imPos[1]);
+//      int zImagePosition = Viewer->GetSlice();
+//
+//      int* extent = imageData->GetExtent();
+//      int* dimension = imageData->GetDimensions();
+//      
+//      int xClipPosition = xImagePosition - extent[0];                                
+//      int yClipPosition = (dimension[1]-1) - (yImagePosition - extent[2]);
+//      int zClipPosition = zImagePosition - extent[4];
+//      
+//      this->ImageWidget->setXPicked(xClipPosition);
+//      this->ImageWidget->setYPicked(yClipPosition);
+//
+//      vtkInteractorStyle *style = vtkInteractorStyle::SafeDownCast(interactor->GetInteractorStyle());
+//      style->OnLeftButtonDown();
+//    }
 }
 

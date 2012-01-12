@@ -9,8 +9,9 @@
 #include "QVTKImageWidget.h"
 #include "QVTKImageWidgetCommand.h"
 
-#include <QSize>
-#include <QVBoxLayout>
+#include <QSize.h>
+#include <QBoxLayout>
+#include <QString>
 
 #include <itkImage.h>
 #include <itkImageFileReader.h>
@@ -27,27 +28,33 @@
 
 //#include <vtkImageStack.h>
 
+
 QVTKImageWidget::QVTKImageWidget(QWidget *parent) : QWidget(parent)
 {
     qvtkWidget = new QVTKWidget(this);
-    
-    QVBoxLayout *layout = new QVBoxLayout;
+
+    QVBoxLayout* layout = new QVBoxLayout;
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     layout->addWidget(qvtkWidget);
     this->setLayout(layout);
-    
+
+    // by default 
+    this->isImageStackLoaded = false;
+    this->imageDisplayedIndex = 0;
+
+
     // create the essentials vtk objects to display the images    
     this->imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
-    
+
     // to display data in the corners of the image viewer
     this->cornerAnnotation = vtkSmartPointer< vtkCornerAnnotation >::New();
-    
+
     // Create image actor
     //	this->actor = vtkSmartPointer<vtkImageActor>::New();
     //    
-    //    // Create a camera 
-    //  this->camera = vtkSmartPointer<vtkCamera>::New();
+    //        // Create a camera 
+    //      this->camera = vtkSmartPointer<vtkCamera>::New();
     //
     //  this->renderer = vtkSmartPointer<vtkRenderer>::New();
     //	this->renderWindow = vtkSmartPointer<vtkRenderWindow>::New();
@@ -66,25 +73,25 @@ QVTKImageWidget::~QVTKImageWidget()
 
 
 void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
-{   
+{
     // reads a vtkImage for display purposes
     vtkSmartPointer <vtkImageReader2Factory> readerFactory =
-    vtkSmartPointer <vtkImageReader2Factory>::New();
-    
+            vtkSmartPointer <vtkImageReader2Factory>::New();
+
     vtkSmartPointer <vtkImageReader2> reader =
-    readerFactory->CreateImageReader2(imageFilename.toAscii().data());
-    
-    reader->SetFileName(imageFilename.toAscii().data());  
+            readerFactory->CreateImageReader2(imageFilename.toAscii().data());
+
+    reader->SetFileName(imageFilename.toAscii().data());
     reader->Update();
-    
-    this->setAndDisplayImage(reader->GetOutput());    
-    
+
+    this->setAndDisplayImage(reader->GetOutput());
+
     readerFactory = NULL;
     reader = NULL;
-    
-    
-    
-    
+
+
+
+
     //  // set itk image depending on the image type 
     //  // if image type is grayscale
     //  if (imageType.compare("scalar") == 0)
@@ -109,7 +116,7 @@ void QVTKImageWidget::setAndDisplayImage(QString imageFilename)
     //      // set the image data provided bye the reader
     //      this->rgbItkImage = reader->GetOutput();
     //    }
-    
+
 }
 
 
@@ -119,40 +126,63 @@ void QVTKImageWidget::setAndDisplayImage(vtkSmartPointer<vtkImageData> image)
     itkImage = NULL;
     rgbItkImage = NULL;
     vtkImage = NULL;
-    
-    this->vtkImage = image;    
-    
-    int* dim = vtkImage->GetDimensions();    
-    std::cout << dim[0] << "," << dim[1] << "," << dim[2] << std::endl;
-   
+
+    this->vtkImage = image;
+
     this->setImageProperties(true);
-    
-    this->displayImage(vtkImage);    
+
+    this->displayImage(vtkImage);
 }
 
 
 void QVTKImageWidget::setAndDisplayMultipleImages(QStringList filenames)
-{   
+{
+    if (this->imageStack.size() > 0)
+        {
+            this->imageStack.clear();
+            for (uint i = 0; i < imageStack.size(); i++)
+                {
+                    imageStack.at(i) = NULL;
+                }
+        }
+
     this->imageStack.reserve(filenames.size());
-    
-    for (int i = 0; i < filenames.size(); i++) 
-    {
-        vtkSmartPointer<vtkImageReader2Factory> readerFactory = 
-        vtkSmartPointer<vtkImageReader2Factory>::New();
-        
-        vtkSmartPointer<vtkImageReader2> reader = 
-        readerFactory->CreateImageReader2(filenames.at(i).toAscii().data());       
-        reader->SetFileName(filenames.at(i).toAscii().data());
-        reader->Update();
-        
-        vtkSmartPointer<vtkImageData> image = reader->GetOutput();
-        this->imageStack.push_back(image);
-        
-        readerFactory = NULL;
-        reader = NULL;    
-        
-    }        
-    displayImage(imageStack.at(0));    
+
+    for (int i = 0; i < filenames.size(); i++)
+        {
+            vtkSmartPointer<vtkImageReader2Factory> readerFactory =
+                    vtkSmartPointer<vtkImageReader2Factory>::New();
+
+            vtkSmartPointer<vtkImageReader2> reader =
+                    readerFactory->CreateImageReader2(filenames.at(i).toAscii().data());
+            reader->SetFileName(filenames.at(i).toAscii().data());
+            reader->Update();
+
+            vtkSmartPointer<vtkImageData> image = reader->GetOutput();
+            this->imageStack.push_back(image);
+
+            readerFactory = NULL;
+            reader = NULL;
+
+        }
+
+    isImageStackLoaded = true;
+
+    displayImage(imageStack.at(imageDisplayedIndex));
+
+}
+
+
+void QVTKImageWidget::
+setAndDisplayMultipleImages(std::vector<vtkSmartPointer<vtkImageData> > imageStack)
+{
+    if (imageStack.size() > 0)
+        {
+            this->imageStack.clear();
+            this->imageStack = imageStack;
+            displayImage(imageStack.at(imageDisplayedIndex));
+        }
+    isImageStackLoaded = true;
 }
 
 
@@ -160,22 +190,23 @@ void QVTKImageWidget::displayImage(vtkImageData *image)
 {
     imageViewer->SetInput(image);
     imageViewer->GetRenderer()->ResetCamera();
-    
+
     // make qt-vtk connection
     qvtkWidget->SetRenderWindow(imageViewer->GetRenderWindow());
-    
+
     // disable interpolation, so we can see each pixel
     vtkImageActor* imageActor = imageViewer->GetImageActor();
     imageActor->InterpolateOff();
-    
+
+
     // Picker to pick pixels
     vtkSmartPointer<vtkPropPicker> propPicker = vtkSmartPointer<vtkPropPicker>::New();
     propPicker->PickFromListOn();
-    
+
     // Give the picker a prop to pick
-    
+
     propPicker->AddPickList(imageActor);
-    
+
     // Annotate the image with mouse over pixel information
     cornerAnnotation->SetLinearFontScaleFactor(2);
     cornerAnnotation->SetNonlinearFontScaleFactor(1);
@@ -183,20 +214,20 @@ void QVTKImageWidget::displayImage(vtkImageData *image)
     //    cornerAnnotation->SetText(3, "<window>\n<level>");
     cornerAnnotation->GetTextProperty()->SetColor(1, 0, 0);
     imageViewer->GetRenderer()->AddViewProp(cornerAnnotation);
-    
+
     //listen to MouseMoveEvents invoked by the interactor's style
     vtkSmartPointer<QVTKImageWidgetCommand> callback =
-    vtkSmartPointer<QVTKImageWidgetCommand>::New();
+            vtkSmartPointer<QVTKImageWidgetCommand>::New();
     callback->SetImageWidget(this);
     callback->SetAnnotation(cornerAnnotation);
     callback->SetPicker(propPicker);
-    
+
     vtkSmartPointer<vtkInteractorStyleImage> imageStyle =
-    vtkSmartPointer<vtkInteractorStyleImage>::New();
+            vtkSmartPointer<vtkInteractorStyleImage>::New();
     imageViewer->GetRenderWindow()->GetInteractor()->SetInteractorStyle(imageStyle);
     imageStyle->AddObserver(vtkCommand::MouseMoveEvent, callback);
-    imageStyle->AddObserver(vtkCommand::LeftButtonPressEvent, callback);
-    
+    //    imageStyle->AddObserver(vtkCommand::LeftButtonPressEvent, callback);
+
     // render image viewer
     imageViewer->Render();
 }
@@ -204,10 +235,14 @@ void QVTKImageWidget::displayImage(vtkImageData *image)
 
 void QVTKImageWidget::displaySelectedImage(int idx)
 {
-    if (!imageStack.empty()) {
-        if (idx >= 0 && idx < (int)imageStack.size())
-            displayImage(imageStack[idx]);
-    }
+    if (!imageStack.empty())
+        {
+            if (idx >= 0 && idx < (int) imageStack.size())
+                {
+                    imageDisplayedIndex = idx;
+                    displayImage(imageStack[imageDisplayedIndex]);
+                }
+        }
 }
 
 
@@ -215,20 +250,37 @@ void QVTKImageWidget::setImageProperties(bool verbose)
 {
     this->numDimensions = this->vtkImage->GetDataDimension();
     this->pixelType = this->vtkImage->GetScalarTypeAsString();
-    this->imageType = this->vtkImage->GetNumberOfScalarComponents(); 
-    
+    this->imageType = this->vtkImage->GetNumberOfScalarComponents();
+
+    int* dim = vtkImage->GetDimensions();
+    this->imageWidth = dim[0];
+    this->imageHeight = dim[1];
+    std::cout << imageWidth << "," << imageHeight << "," << dim[2] << std::endl;
+
     if (verbose)
-    {
-        std::cout << "Pixels type: " << pixelType << std::endl;
-        std::cout << "Image type: " << imageType << std::endl;
-        std::cout << "Num of Dimensions: " << numDimensions << std::endl;
-    }
+        {
+            std::cout << "Pixels type: " << pixelType << std::endl;
+            std::cout << "Image type: " << imageType << std::endl;
+            std::cout << "Num of Dimensions: " << numDimensions << std::endl;
+        }
+}
+
+
+QVTKWidget* QVTKImageWidget::getQVTKWidget()
+{
+    return this->qvtkWidget;
 }
 
 
 vtkSmartPointer<vtkImageViewer2> QVTKImageWidget::getImageViewer()
 {
     return this->imageViewer;
+}
+
+
+std::vector< vtkSmartPointer<vtkImageData> > QVTKImageWidget::getImageStack()
+{
+    return this->imageStack;
 }
 
 
@@ -252,7 +304,7 @@ void QVTKImageWidget::setXPicked(int xPosition)
 
 void QVTKImageWidget::setYPicked(int yPosition)
 {
-    this->yPicked = xPosition;
+    this->yPicked = yPosition;
 }
 
 
@@ -264,15 +316,18 @@ QString QVTKImageWidget::getPixelType()
 
 QString QVTKImageWidget::getImageType()
 {
-    if (imageType == 1) {
-        return QString("grayscale");
-    } 
-    else if (imageType == 3) {
-        return QString("rgb");
-    }
-    else {
-        return QString("-");
-    }    
+    if (imageType == 1)
+        {
+            return QString("grayscale");
+        }
+    else if (imageType == 3)
+        {
+            return QString("rgb");
+        }
+    else
+        {
+            return QString("-");
+        }
 }
 
 
@@ -281,4 +336,10 @@ QString QVTKImageWidget::getNumOfDimesions()
     QString out;
     out.setNum(numDimensions);
     return out;
+}
+
+
+int QVTKImageWidget::getImageDisplayedIndex()
+{
+    return imageDisplayedIndex;
 }

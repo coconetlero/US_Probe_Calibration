@@ -69,6 +69,13 @@ public:
     
     
     /**
+     * \brief Set and display multiple images from a given vtkImageData Array.      
+     * \param[in] a std::vector of vtkImageData 
+     */
+    void setAndDisplayMultipleImages(std::vector< vtkSmartPointer<vtkImageData> > imageStack);
+    
+    
+    /**
      * \brief display an image stored in this imageStack. 
      * \param[in] the index in the stack position of the image 
      */
@@ -83,6 +90,9 @@ public:
     QString getImageType();
     
     QString getNumOfDimesions();
+    
+    /** \brief return this image stack */
+    std::vector< vtkSmartPointer<vtkImageData> > getImageStack();
     
     /** 
      * returns an array with the width and height of the image
@@ -131,12 +141,29 @@ public:
      */
     vtkSmartPointer<vtkImageViewer2> getImageViewer();
     
+    /**
+     * \brief Return this qvtkWidget 
+     * \param[out] the QVTKWidget
+     */
+    QVTKWidget* getQVTKWidget();
+    
+    
+    /** \brief If an image stack is loaded, then return the index in the image 
+     * stack of displayed image 
+     */
+    int getImageDisplayedIndex();
+    
+    
+    /** \brief Flag to know if it's displayed an image stack */
+    bool isImageStackLoaded;
+    
+    
 private:    
 
     /** 
      * The QVTKWidget for display and interact with the images
      */
-    QVTKWidget *qvtkWidget;
+    QVTKWidget* qvtkWidget;
     
     /** The grayscale image displayed in this widget */
     ImageType::Pointer itkImage;
@@ -155,6 +182,7 @@ private:
     /** The type of the image pixels */
     std::string pixelType;
     
+ 
     /** the number of scalar components in the image 1 => grayscale, 3 => rgb */
     int imageType;
     
@@ -179,6 +207,8 @@ private:
     /** current y coordinate of picked position over the image */
     int yPicked;
     
+    /** If image stack is displayed this sets a reference to current image displayed */
+    int imageDisplayedIndex;
     
     
     /**
