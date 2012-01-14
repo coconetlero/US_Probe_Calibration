@@ -17,12 +17,6 @@
 #include <vtkImageData.h>
 
 
-//float (*trans_matrix)[4];
-
-/** \brief*/
-//double* result;
-
-
 
 class ProbeCalibrationWidget : public QWidget, private Ui::ProbeCalibrationWidget
 {

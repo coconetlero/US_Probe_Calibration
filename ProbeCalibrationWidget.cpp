@@ -7,9 +7,6 @@
 
 #include "ProbeCalibrationWidget.h"
 
-#include "calibration/Quaternions.h"
-//#include "levmar-2.5/levmar.h"
-#include "Matrix.h"
 
 #include <QErrorMessage>
 #include <QString>
@@ -17,6 +14,9 @@
 #include <QTextStream>
 
 #include <vtkExtractVOI.h>
+
+#include <vnl/vnl_quaternion.h>
+#include <vnl/vnl_vector_fixed.h>
 
 
 //#ifndef LM_DBL_PREC
@@ -259,7 +259,6 @@ void ProbeCalibrationWidget::loadRotationsFile()
           line = stream.readLine();
           QStringList lineList = line.split(" ");
 
-          std::cout << idx << std::endl;
           for (int j = 0; j < lineList.size(); j++)
             {
               rots[idx][j] = lineList.at(j).toFloat();
@@ -317,6 +316,19 @@ void ProbeCalibrationWidget::loadTranslationsFile()
 
 void ProbeCalibrationWidget::calibrate()
 {
+    
+    std::cout << "transform Quaternions to Euler angles" << std::endl;
+    std::cout << std::endl;
+
+    for (uint i = 0; i < imageStack.size(); i++) {
+        
+        vnl_quaternion<float> Q(rotations[i][0], rotations[i][1], rotations[i][2], rotations[i][3]);
+        
+        vnl_vector_fixed<float, 3> E = Q.rotation_euler_angles();
+        
+        std::cout << E.get(0) << " " << E.get(1) << " " << E.get(2) << std::endl;
+    }
+    
 //  float tm[imageStack.size() * 4][4];
 //
 //  for (uint i = 0; i < imageStack.size(); i++)
