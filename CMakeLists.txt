@@ -32,26 +32,6 @@ INCLUDE_DIRECTORIES(
 )
 
 
-#----------------------------  for levmar --------------------------
-
-INCLUDE_DIRECTORIES(levmar-2.5)
-
-
-# levmar library source files
-ADD_LIBRARY(levmar STATIC
-  levmar-2.5/lm.c levmar-2.5/Axb.c levmar-2.5/misc.c levmar-2.5/lmlec.c 
-  levmar-2.5/lmbc.c levmar-2.5/lmblec.c levmar-2.5/lmbleic.c levmar-2.5/levmar.h
-  levmar-2.5/misc.h levmar-2.5/compiler.h
-)
-
-# demo program
-LINK_DIRECTORIES(${LAPACKBLAS_DIR})
-LINK_DIRECTORIES(.)
-
-
-#----------------------------  for levmar --------------------------
-
-
  
 # Set your files and resources here
 SET(AppSrcs main.cpp mainwindow.cpp QVTKImageWidget.cpp QVTKImageWidgetCommand.cpp
@@ -77,16 +57,7 @@ SOURCE_GROUP("Generated" FILES
   ${MOCSrcs}
 )
  
-ADD_EXECUTABLE(US_Probe_Calibration ${AppSrcs} ${AppHeaders} ${UISrcs} ${MOCSrcs}
-    levmar-2.5/levmar.h)
+ADD_EXECUTABLE(US_Probe_Calibration ${AppSrcs} ${AppHeaders} ${UISrcs} ${MOCSrcs})
 
-#TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES})
-
-IF(HAVE_F2C) 
-    TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES} 
-        levmar ${LAPACK_LIB} ${BLAS_LIB} ${F2C_LIB})
-ELSE(HAVE_F2C)
-    TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES} 
-        levmar ${LAPACK_LIB} ${BLAS_LIB} ${F77_LIB} ${I77_LIN})
-ENDIF(HAVE_F2C)
+TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES})
 

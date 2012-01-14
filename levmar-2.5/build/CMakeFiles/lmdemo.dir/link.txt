@@ -1,1 +1,0 @@
-/usr/bin/gcc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lmdemo.dir/lmdemo.o  -o lmdemo  -L. liblevmar.a -llapack -lblas -lf2c 
