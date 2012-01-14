@@ -322,10 +322,8 @@ void ProbeCalibrationWidget::calibrate()
 
     for (uint i = 0; i < imageStack.size(); i++) {
         
-        vnl_quaternion<float> Q(rotations[i][0], rotations[i][1], rotations[i][2], rotations[i][3]);
-        
-        vnl_vector_fixed<float, 3> E = Q.rotation_euler_angles();
-        
+        vnl_quaternion<float> Q(rotations[i][0], rotations[i][1], rotations[i][2], rotations[i][3]);        
+        vnl_vector_fixed<float, 3> E = Q.rotation_euler_angles();        
         std::cout << E.get(0) << " " << E.get(1) << " " << E.get(2) << std::endl;
     }
     
