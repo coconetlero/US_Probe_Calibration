@@ -16,6 +16,7 @@
 #include <vtkSmartPointer.h>
 #include <vtkImageData.h>
 
+#include <vnl/vnl_matrix.h>
 
 
 class ProbeCalibrationWidget : public QWidget, private Ui::ProbeCalibrationWidget
@@ -55,11 +56,11 @@ private:
     /** \brief an Array of vtkImageData to work */
     std::vector< vtkSmartPointer<vtkImageData> > imageStack;
     
-    /** \brief a 2D array to store the translations of each image given by the tracker */
-    float (*translations)[3];
+    /** \brief a vnl_matrix to store the translations of each image given by the tracker */
+    vnl_matrix<float> translations;
     
-    /** \brief a 2D array to store the rotations of each image given by the tracker */
-    float (*rotations)[4];
+    /** \brief a vnl_matrix to store the rotations of each image given by the tracker */
+    vnl_matrix<float> rotations;
     
     
     /** the main window to call it */
