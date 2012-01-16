@@ -314,6 +314,9 @@ void ProbeCalibrationWidget::calibrate()
 {
 
     // gnerate the transformation (rotation and translation) matrixes for each image
+    std::cout << "Transformation matrices" << std::endl;
+    std::cout << std::endl;
+    
     for (uint i = 0; i < imageStack.size(); i++) {            
         
         // the given parameters is [0]=scale factor, [1]=x, [2]=y, [3]=z                       
@@ -326,6 +329,7 @@ void ProbeCalibrationWidget::calibrate()
         transformation.put(2, 3, translations[i][2]);
         
         std::cerr << transformation;
+        std::cout << std::endl;
     }
     
     //  float tm[imageStack.size() * 4][4];
@@ -354,18 +358,7 @@ void ProbeCalibrationWidget::calibrate()
     //
     //  trans_matrix = tm;
     
-    std::cout << "Transformation matrices" << std::endl;
-    std::cout << std::endl;
-    //
-    //  for (uint i = 0; i < imageStack.size(); i++)
-    //    {
-    //      std::cout << "Image " << (i + 1) << std::endl;
-    //      std::cout << trans_matrix[i * 4][0] << " " << trans_matrix[i * 4][1] << " " << trans_matrix[i * 4][2] << " " << trans_matrix[i * 4][3] << std::endl;
-    //      std::cout << trans_matrix[i * 4 + 1][0] << " " << trans_matrix[i * 4 + 1][1] << " " << trans_matrix[i * 4 + 1][2] << " " << trans_matrix[i * 4 + 1][3] << std::endl;
-    //      std::cout << trans_matrix[i * 4 + 2][0] << " " << trans_matrix[i * 4 + 2][1] << " " << trans_matrix[i * 4 + 2][2] << " " << trans_matrix[i * 4 + 2][3] << std::endl;
-    //      std::cout << trans_matrix[i * 4 + 3][0] << " " << trans_matrix[i * 4 + 3][1] << " " << trans_matrix[i * 4 + 3][2] << " " << trans_matrix[i * 4 + 3][3] << std::endl;
-    //      std::cout << std::endl;
-    //    }
+
     //
     //    
     //    //LEVMAR
