@@ -315,8 +315,8 @@ void ProbeCalibrationWidget::calibrate()
     for (uint i = 0; i < imageStack.size(); i++) {            
         
         // the given parameters is [0]=scale factor, [1]=x, [2]=y, [3]=z                       
-        vnl_quaternion<float> quaternion(rotations[i][1], rotations[i][2], rotations[i][3], rotations[i][0]);        
-        vnl_matrix<float> transformation = quaternion.rotation_matrix_transpose_4();
+        vnl_quaternion<double> quaternion(rotations[i][1], rotations[i][2], rotations[i][3], rotations[i][0]);        
+        vnl_matrix<double> transformation = quaternion.rotation_matrix_transpose_4();
         transformation = transformation.transpose();
         
         transformation.put(0, 3, translations[i][0]);
