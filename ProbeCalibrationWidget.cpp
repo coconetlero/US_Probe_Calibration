@@ -20,11 +20,6 @@
 
 
 
-//#ifndef LM_DBL_PREC
-//#error Example program assumes that levmar has been compiled with double precision, see LM_DBL_PREC!
-//#endif
-
-
 ProbeCalibrationWidget::ProbeCalibrationWidget(QWidget* parent) : QWidget(parent)
 {
     this->setupUi(this);
