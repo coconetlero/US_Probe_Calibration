@@ -53,14 +53,17 @@ private:
     
     bool workWithStack;
     
+    
     /** \brief an Array of vtkImageData to work */
     std::vector< vtkSmartPointer<vtkImageData> > imageStack;
     
+    
     /** \brief a vnl_matrix to store the translations of each image given by the tracker */
-    vnl_matrix<float> translations;
+    vnl_matrix<double> translations;
+    
     
     /** \brief a vnl_matrix to store the rotations of each image given by the tracker */
-    vnl_matrix<float> rotations;
+    vnl_matrix<double> rotations;
     
     
     /** the main window to call it */
@@ -75,16 +78,10 @@ private:
     vtkSmartPointer<vtkImageData> cropProbeImage(vtkSmartPointer<vtkImageData> image, int depthType);
     
     
-    void func(double *p, double *hx, int m, int n, void *adata);
-        
     /** \brief a 2D vector to store the selected coordinates on each image */
     std::vector< std::vector<int> > coords;
     
     
-    float (*trans_matrix)[4];
-    
-    /** \brief*/
-    double* result;
     
     
 private slots:

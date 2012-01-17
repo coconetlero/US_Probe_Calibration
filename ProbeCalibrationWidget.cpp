@@ -257,7 +257,7 @@ void ProbeCalibrationWidget::loadRotationsFile()
             
             for (int j = 0; j < lineList.size(); j++)
             {
-                rotations.put(idx, j, lineList.at(j).toFloat());                 
+                rotations.put(idx, j, lineList.at(j).toDouble());                 
             }
             
             idx++;            
@@ -294,7 +294,7 @@ void ProbeCalibrationWidget::loadTranslationsFile()
             
             for (int j = 0; j < lineList.size(); j++)
             {
-                translations.put(idx, j, lineList.at(j).toFloat());        
+                translations.put(idx, j, lineList.at(j).toDouble());        
             }
             idx++;   
             std::cout << line.toAscii().data() << std::endl;
