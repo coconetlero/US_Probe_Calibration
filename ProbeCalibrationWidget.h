@@ -78,8 +78,8 @@ private:
     vtkSmartPointer<vtkImageData> cropProbeImage(vtkSmartPointer<vtkImageData> image, int depthType);
     
     
-    /** \brief a 2D vector to store the selected coordinates on each image */
-    std::vector< std::vector<int> > coords;
+    /** \brief a vnl_matrix to store the selected coordinates on each image */
+    vnl_matrix<int> coords;
     
     
     

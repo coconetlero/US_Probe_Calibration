@@ -11,16 +11,24 @@
 
 #include <vnl/vnl_least_squares_function.h>
 #include <vnl/vnl_matrix.h>
-#include <vnl/vnl_vector.h>
+#include <vector.h>
 
 class CalibrationPointsSquaresFunction : public vnl_least_squares_function {
     
 public:
     
-    CalibrationPointsSquaresFunction(vnl_vector< vnl_matrix<double> > &transformationSet);
+    CalibrationPointsSquaresFunction
+    (std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * _points);
     
-    virtual void f( vnl_vector<double> const &x, vnl_vector<double> &fx);
+    virtual ~CalibrationPointsSquaresFunction();
+    
+    virtual void f(vnl_vector<double> const &x, vnl_vector<double> &fx);
 
+private:
+    
+    std::vector<vnl_matrix<double> *> *data;
+    vnl_matrix<int> * points;
+    
 };
 
 #endif

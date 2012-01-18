@@ -35,9 +35,10 @@ INCLUDE_DIRECTORIES(
  
 # Set your files and resources here
 SET(AppSrcs main.cpp mainwindow.cpp QVTKImageWidget.cpp QVTKImageWidgetCommand.cpp
-    ProbeCalibrationWidget.cpp)
+    ProbeCalibrationWidget.cpp CalibrationPointsSquaresFunction.cpp)
     
-SET(AppHeaders mainwindow.h QVTKImageWidget.h QVTKImageWidgetCommand.h ProbeCalibrationWidget.h)
+SET(AppHeaders mainwindow.h QVTKImageWidget.h QVTKImageWidgetCommand.h ProbeCalibrationWidget.h
+    CalibrationPointsSquaresFunction.h)
     
 SET(AppUI mainwindow.ui ProbeCalibrationWidget.ui)
  
