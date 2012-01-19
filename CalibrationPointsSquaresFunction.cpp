@@ -9,11 +9,11 @@
 #include "CalibrationPointsSquaresFunction.h"
 
 #include <math.h>
-
+#include <iostream>
 
 CalibrationPointsSquaresFunction::
 CalibrationPointsSquaresFunction(std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * _points) :
-vnl_least_squares_function(11, 3 * points->size(), vnl_least_squares_function::no_gradient)
+vnl_least_squares_function(11, 3 * _points->rows(), vnl_least_squares_function::no_gradient)
 {
     this->data = transformationSet;
     this->points = _points;
@@ -51,7 +51,7 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
     vnl_matrix<double> xP(4,1);
     
     
-    for (unsigned int i = 0; data->size(); i++) {
+    for (unsigned int i = 0; i < points->rows(); i++) {
         vnl_matrix<double> * transformation = data->at(i);    
         
         cTt.put(0, 0, cos(w_1x) * cos(w_1y));
@@ -69,8 +69,7 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
         cTt.put(3, 0, 0);
         cTt.put(3, 1, 0);
         cTt.put(3, 2, 0);
-        cTt.put(3, 3, 1);
-        
+        cTt.put(3, 3, 1);                
         
         tTr.put(0, 0, transformation->get(0, 0));
         tTr.put(0, 1, transformation->get(0, 1));
@@ -87,7 +86,7 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
         tTr.put(3, 0, transformation->get(3, 0));
         tTr.put(3, 1, transformation->get(3, 1));
         tTr.put(3, 2, transformation->get(3, 2));
-        tTr.put(4, 3, transformation->get(3, 3));
+        tTr.put(3, 3, transformation->get(3, 3));
         
         
         rTp.put(0, 0, cos(w_3x) * cos(w_3y));
@@ -107,8 +106,8 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
         rTp.put(3, 2, 0);
         rTp.put(3, 3, 1);
         
-        xP.put(0, 0, s_x * (double)*points[i][0]);
-        xP.put(1, 0, s_y * (double)*points[i][1]);
+        xP.put(0, 0, s_x * points->get(i, 0));
+        xP.put(1, 0, s_y * points->get(i, 1));
         xP.put(2, 0, 1);
         xP.put(3, 0, 1);
         

@@ -82,32 +82,37 @@ void MainWindow::addImages()
 
 void MainWindow::probeCalibration()
 {
-  if (!displayWidget->getImageStack().empty())
-    {
-      ProbeCalibrationWidget* probeCalibration = new ProbeCalibrationWidget();
+//  if (!displayWidget->getImageStack().empty())
+//    {
+//      ProbeCalibrationWidget* probeCalibration = new ProbeCalibrationWidget();
+//
+//      if (displayWidget->isImageStackLoaded)
+//        probeCalibration->setImageStack(displayWidget->getImageStack());
+//      else
+//        probeCalibration->setImage(displayWidget->getImageViewer()->GetInput());
+//
+//
+//
+//      // get left mouse pressed with high priority
+//      Connections->Connect(displayWidget->getQVTKWidget()->GetRenderWindow()->GetInteractor(),
+//                           vtkCommand::LeftButtonPressEvent,
+//                           probeCalibration,
+//                           SLOT(getCoordinates()));
+//
+//      probeCalibration->setMainWindow(this);
+//      probeCalibration->show();
+//    }
+//  else
+//    {
+//      QErrorMessage errorMessage;
+//      errorMessage.showMessage("No images loaded, </ br> please load an images before calibrate the probe");
+//      errorMessage.exec();
+//    }
+    
+    ProbeCalibrationWidget* probeCalibration = new ProbeCalibrationWidget();
+    probeCalibration->setMainWindow(this);
+    probeCalibration->show();
 
-      if (displayWidget->isImageStackLoaded)
-        probeCalibration->setImageStack(displayWidget->getImageStack());
-      else
-        probeCalibration->setImage(displayWidget->getImageViewer()->GetInput());
-
-
-
-      // get left mouse pressed with high priority
-      Connections->Connect(displayWidget->getQVTKWidget()->GetRenderWindow()->GetInteractor(),
-                           vtkCommand::LeftButtonPressEvent,
-                           probeCalibration,
-                           SLOT(getCoordinates()));
-
-      probeCalibration->setMainWindow(this);
-      probeCalibration->show();
-    }
-  else
-    {
-      QErrorMessage errorMessage;
-      errorMessage.showMessage("No images loaded, </ br> please load an images before calibrate the probe");
-      errorMessage.exec();
-    }
 }
 
 
