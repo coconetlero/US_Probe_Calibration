@@ -51,7 +51,7 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
     vnl_matrix<double> xP(4,1);
     
     
-    for (unsigned int i = 0; i < points->rows(); i++) {
+    for (unsigned int i = 0; i < data->size(); i++) {
         vnl_matrix<double> * transformation = data->at(i);    
         
         cTt.put(0, 0, cos(w_1x) * cos(w_1y));
