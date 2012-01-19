@@ -435,15 +435,12 @@ void ProbeCalibrationWidget::calibrate()
         
     
     CalibrationPointsSquaresFunction optimizationFunction(&transformationSet, &coords);
- 
-    std::cout << "residuals = " << optimizationFunction.get_number_of_residuals() <<  std::endl;
-    std::cout << "unknows = " << optimizationFunction.get_number_of_unknowns() <<  std::endl;
     
     
     vnl_vector<double> x0(11);
     x0.fill(1.0);
     vnl_vector<double> x1 = x0.as_ref();
-//    vnl_vector<double> x1(11);
+
     x1.fill(1.0);
     
     vnl_levenberg_marquardt LM(optimizationFunction);    
@@ -455,13 +452,14 @@ void ProbeCalibrationWidget::calibrate()
     // max iterations 5000
     LM.set_max_function_evals(5000);
 
-
+    bool okOptimization = false;
+    
     try {
-        LM.minimize(x1);
+        okOptimization = LM.minimize(x1);
     } catch(std::exception& e) {
         qCritical() << "Exception thrown:" << e.what();
     }
-//    bool pass = LM.minimize(x1);
+
     
 
     LM.diagnose_outcome(cout);
