@@ -11,7 +11,7 @@
 
 #include <vnl/vnl_least_squares_function.h>
 #include <vnl/vnl_matrix.h>
-#include <vector.h>
+#include <vector> 
 
 class CalibrationPointsSquaresFunction : public vnl_least_squares_function {
     
@@ -27,6 +27,7 @@ public:
 private:
     
     std::vector<vnl_matrix<double> *> *data;
+    
     vnl_matrix<int> * points;
     
 };
