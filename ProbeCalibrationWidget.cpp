@@ -151,28 +151,28 @@ cropProbeImage(vtkSmartPointer<vtkImageData> image, int depthType)
         case 4:
         {
             extractVOI->SetInput(image);
-            extractVOI->SetVOI(91, 478, dim[1] - 446, dim[1] - 49, 0, 0);
+            extractVOI->SetVOI(90, 480, dim[1] - 446, dim[1] - 49, 0, 0);
             extractVOI->Update();
             return extractVOI->GetOutput();
         }
         case 5:
         {
             extractVOI->SetInput(image);
-            extractVOI->SetVOI(136, 435, dim[1] - 446, dim[1] - 49, 0, 0);
+            extractVOI->SetVOI(128, 441, dim[1] - 446, dim[1] - 49, 0, 0);
             extractVOI->Update();
             return extractVOI->GetOutput();
         }
         case 6:
         {
             extractVOI->SetInput(image);
-            extractVOI->SetVOI(155, 414, dim[1] - 446, dim[1] - 49, 0, 0);
+            extractVOI->SetVOI(155, 416, dim[1] - 446, dim[1] - 49, 0, 0);
             extractVOI->Update();
             return extractVOI->GetOutput();
         }
         case 8:
         {
             extractVOI->SetInput(image);
-            extractVOI->SetVOI(188, 380, dim[1] - 446, dim[1] - 49, 0, 0);
+            extractVOI->SetVOI(187, 384, dim[1] - 446, dim[1] - 49, 0, 0);
             extractVOI->Update();
             return extractVOI->GetOutput();
         }
@@ -307,7 +307,7 @@ void ProbeCalibrationWidget::loadTranslationsFile()
 
 void ProbeCalibrationWidget::calibrate()
 {
-
+//
 //    // gnerate the transformation (rotation and translation) matrixes for each image
 //    std::cout << "Transformation matrices" << std::endl;
 //    std::cout << std::endl;
@@ -333,7 +333,7 @@ void ProbeCalibrationWidget::calibrate()
 //    
 //    coords.print(std::cout);
 //    std::cout << std::endl;
-    
+//    
 
     
     
@@ -347,19 +347,19 @@ void ProbeCalibrationWidget::calibrate()
     
     vnl_matrix<int> coords(point_size, 2);
     coords[0][0] = 199;
-    coords[0][1] = 168;
+    coords[0][1] = 164;
     coords[1][0] = 211;
-    coords[1][1] = 197;
-    coords[2][0] = 82;
-    coords[2][1] = 177;
+    coords[1][1] = 193;
+    coords[2][0] = 84;
+    coords[2][1] = 175;
     coords[3][0] = 226;
-    coords[3][1] = 185;
-    coords[4][0] = 188;
-    coords[4][1] = 204;
-    coords[5][0] = 327;
-    coords[5][1] = 217;
-    coords[6][0] = 255;
-    coords[6][1] = 181;
+    coords[3][1] = 180;
+    coords[4][0] = 190;
+    coords[4][1] = 200;
+    coords[5][0] = 326;
+    coords[5][1] = 212;
+    coords[6][0] = 257;
+    coords[6][1] = 179;
     
     
     vnl_matrix<double> rotations(point_size, 4);

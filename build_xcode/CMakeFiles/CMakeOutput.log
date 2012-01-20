@@ -1,0 +1,256 @@
+The system is: Darwin - 11.2.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+
+Run Build Command:/Applications/CMake\ 2.8-5.app/Contents/bin/cmakexbuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTryCompileExec -configuration Debug
+=== BUILD NATIVE TARGET cmTryCompileExec OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+Check dependencies
+
+PhaseScriptExecution "CMake ReRun" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5C44C05C44C05C44C0000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5C44C05C44C05C44C0000000.sh
+make: `CMakeFiles/cmake.check_cache' is up to date.
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/testCCompiler.o testCCompiler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wparentheses -Wswitch -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-shorten-64-to-32 "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/include -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources/x86_64 -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/testCCompiler.d -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/testCCompiler.c -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/testCCompiler.o
+
+Ld Debug/cmTryCompileExec normal x86_64
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -filelist /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/cmTryCompileExec.LinkFileList -mmacosx-version-min=10.7 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec
+
+PhaseScriptExecution "CMake PostBuild Rules" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5C4C005C4C005C4C00000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5C4C005C4C005C4C00000000.sh
+echo "Depend check for xcode"
+Depend check for xcode
+cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp && make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.cmTryCompileExec.Debug
+make[1]: Nothing to be done for `PostBuild.cmTryCompileExec.Debug'.
+
+
+** BUILD SUCCEEDED **
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+
+Run Build Command:/Applications/CMake\ 2.8-5.app/Contents/bin/cmakexbuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTryCompileExec -configuration Debug
+=== BUILD NATIVE TARGET cmTryCompileExec OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+Check dependencies
+
+PhaseScriptExecution "CMake ReRun" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D23505D23505D2350000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D23505D23505D2350000000.sh
+make: `CMakeFiles/cmake.check_cache' is up to date.
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CMakeCCompilerABI.o "../../../../../../../Applications/CMake 2.8-5.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c" normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wparentheses -Wswitch -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-shorten-64-to-32 "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/include -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources/x86_64 -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CMakeCCompilerABI.d -c "/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/../../../../../../../Applications/CMake 2.8-5.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c" -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CMakeCCompilerABI.o
+
+Ld Debug/cmTryCompileExec normal x86_64
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -filelist /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/cmTryCompileExec.LinkFileList -mmacosx-version-min=10.7 -v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec
+
+PhaseScriptExecution "CMake PostBuild Rules" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D2A905D2A905D2A90000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D2A905D2A905D2A90000000.sh
+echo "Depend check for xcode"
+Depend check for xcode
+cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp && make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.cmTryCompileExec.Debug
+make[1]: Nothing to be done for `PostBuild.cmTryCompileExec.Debug'.
+
+
+** BUILD SUCCEEDED **
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+
+Run Build Command:/Applications/CMake\ 2.8-5.app/Contents/bin/cmakexbuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTryCompileExec -configuration Debug
+=== BUILD NATIVE TARGET cmTryCompileExec OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+Check dependencies
+
+PhaseScriptExecution "CMake ReRun" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D1D405D1D405D1D40000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D1D405D1D405D1D40000000.sh
+make: `CMakeFiles/cmake.check_cache' is up to date.
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/testCXXCompiler.o testCXXCompiler.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wparentheses -Wswitch -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/include -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources/x86_64 -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/testCXXCompiler.d -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/testCXXCompiler.cxx -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/testCXXCompiler.o
+
+Ld Debug/cmTryCompileExec normal x86_64
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang++ -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -filelist /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/cmTryCompileExec.LinkFileList -mmacosx-version-min=10.7 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec
+
+PhaseScriptExecution "CMake PostBuild Rules" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D24705D24705D2470000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5D24705D24705D2470000000.sh
+echo "Depend check for xcode"
+Depend check for xcode
+cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp && make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.cmTryCompileExec.Debug
+make[1]: Nothing to be done for `PostBuild.cmTryCompileExec.Debug'.
+
+
+** BUILD SUCCEEDED **
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+
+Run Build Command:/Applications/CMake\ 2.8-5.app/Contents/bin/cmakexbuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTryCompileExec -configuration Debug
+=== BUILD NATIVE TARGET cmTryCompileExec OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+Check dependencies
+
+PhaseScriptExecution "CMake ReRun" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5E03505E03505E0350000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5E03505E03505E0350000000.sh
+make: `CMakeFiles/cmake.check_cache' is up to date.
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o "../../../../../../../Applications/CMake 2.8-5.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp" normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wparentheses -Wswitch -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -Wno-sign-conversion -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/include -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources/x86_64 -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CMakeCXXCompilerABI.d -c "/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/../../../../../../../Applications/CMake 2.8-5.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp" -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o
+
+Ld Debug/cmTryCompileExec normal x86_64
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang++ -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -filelist /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/cmTryCompileExec.LinkFileList -mmacosx-version-min=10.7 -v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec
+
+PhaseScriptExecution "CMake PostBuild Rules" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5E0A905E0A905E0A90000000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-5E0A905E0A905E0A90000000.sh
+echo "Depend check for xcode"
+Depend check for xcode
+cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp && make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.cmTryCompileExec.Debug
+make[1]: Nothing to be done for `PostBuild.cmTryCompileExec.Debug'.
+
+
+** BUILD SUCCEEDED **
+
+
+
+Determining if the Q_WS_MAC exist passed with the following output:
+Change Dir: /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+
+Run Build Command:/Applications/CMake\ 2.8-5.app/Contents/bin/cmakexbuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTryCompileExec -configuration Debug
+=== BUILD NATIVE TARGET cmTryCompileExec OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+Check dependencies
+
+PhaseScriptExecution "CMake ReRun" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101DB70101DB70101DB70000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101DB70101DB70101DB70000.sh
+make: `CMakeFiles/cmake.check_cache' is up to date.
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CheckSymbolExists.o CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wparentheses -Wswitch -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-shorten-64-to-32 "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/include -I/opt/QtSDK/Desktop/Qt/474/gcc/include -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources/x86_64 -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -Wall -Wno-uninitialized -Wno-unused-parameter -no-cpp-precomp -MMD -MT dependencies -MF /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CheckSymbolExists.d -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CheckSymbolExists.o
+clang: warning: argument unused during compilation: '-no-cpp-precomp'
+In file included from /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:
+/opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore/qglobal.h:320:6: warning: #warning "This version of Mac OS X is unsupported" [-W#warnings,7]
+ #    warning "This version of Mac OS X is unsupported"
+      ^
+1 warning generated.
+
+Ld Debug/cmTryCompileExec normal x86_64
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -filelist /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/cmTryCompileExec.LinkFileList -mmacosx-version-min=10.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec
+
+PhaseScriptExecution "CMake PostBuild Rules" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101E280101E280101E280000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101E280101E280101E280000.sh
+echo "Depend check for xcode"
+Depend check for xcode
+cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp && make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.cmTryCompileExec.Debug
+make[1]: Nothing to be done for `PostBuild.cmTryCompileExec.Debug'.
+
+
+** BUILD SUCCEEDED **
+
+
+File /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef Q_WS_MAC
+  cmakeRequireSymbol(0,&Q_WS_MAC);
+#endif
+  return 0;
+}
+
+Determining if the QT_MAC_USE_COCOA exist passed with the following output:
+Change Dir: /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+
+Run Build Command:/Applications/CMake\ 2.8-5.app/Contents/bin/cmakexbuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTryCompileExec -configuration Debug
+=== BUILD NATIVE TARGET cmTryCompileExec OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+Check dependencies
+
+PhaseScriptExecution "CMake ReRun" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101DEB0101DEB0101DEB0000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101DEB0101DEB0101DEB0000.sh
+make: `CMakeFiles/cmake.check_cache' is up to date.
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CheckSymbolExists.o CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wparentheses -Wswitch -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-shorten-64-to-32 "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/include -I/opt/QtSDK/Desktop/Qt/474/gcc/include -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources/x86_64 -I/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -Wall -Wno-uninitialized -Wno-unused-parameter -no-cpp-precomp -MMD -MT dependencies -MF /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CheckSymbolExists.d -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/CheckSymbolExists.o
+clang: warning: argument unused during compilation: '-no-cpp-precomp'
+
+Ld Debug/cmTryCompileExec normal x86_64
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -F/Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug -filelist /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Objects-normal/x86_64/cmTryCompileExec.LinkFileList -mmacosx-version-min=10.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -o /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec
+
+PhaseScriptExecution "CMake PostBuild Rules" CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101E5C0101E5C0101E5C0000.sh
+    cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp
+    /bin/sh -c /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTryCompileExec.build/Script-101E5C0101E5C0101E5C0000.sh
+echo "Depend check for xcode"
+Depend check for xcode
+cd /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp && make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.cmTryCompileExec.Debug
+make[1]: Nothing to be done for `PostBuild.cmTryCompileExec.Debug'.
+
+
+** BUILD SUCCEEDED **
+
+
+File /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qconfig.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef QT_MAC_USE_COCOA
+  cmakeRequireSymbol(0,&QT_MAC_USE_COCOA);
+#endif
+  return 0;
+}
+

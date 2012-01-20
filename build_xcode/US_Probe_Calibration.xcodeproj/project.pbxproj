@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              511330511330511330000000 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 5123F05123F05123F0000000 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            5115D05115D05115D0000000 /* CMake ReRun */,
+                            511C90511C90511C90000000 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            106E000106E000106E000000 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+501090501090501090000000 /* /Users/zian/Proyectos/US_Probe_Calibration/main.cpp */ = {isa = PBXBuildFile; fileRef = 501640501640501640000000 /* /Users/zian/Proyectos/US_Probe_Calibration/main.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5007B05007B05007B0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.cpp */ = {isa = PBXBuildFile; fileRef = 500D60500D60500D60000000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+103FBF0103FBF0103FBF0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.cpp */ = {isa = PBXBuildFile; fileRef = 5004B05004B05004B0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+10404D010404D010404D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.cpp */ = {isa = PBXBuildFile; fileRef = 103FED0103FED0103FED0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1040DB01040DB01040DB0000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.cpp */ = {isa = PBXBuildFile; fileRef = 104077010407701040770000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+104131010413101041310000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.cpp */ = {isa = PBXBuildFile; fileRef = 104112010411201041120000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+104244010424401042440000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.h */ = {isa = PBXBuildFile; fileRef = 1041CA01041CA01041CA0000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.h */; settings = { COMPILER_FLAGS = ""; }; };
+1042F501042F501042F50000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.h */ = {isa = PBXBuildFile; fileRef = 10427C010427C010427C0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.h */; settings = { COMPILER_FLAGS = ""; }; };
+1043AA01043AA01043AA0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.h */ = {isa = PBXBuildFile; fileRef = 10432D010432D010432D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.h */; settings = { COMPILER_FLAGS = ""; }; };
+10445E010445E010445E0000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.h */ = {isa = PBXBuildFile; fileRef = 1043DD01043DD01043DD0000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.h */; settings = { COMPILER_FLAGS = ""; }; };
+104514010451401045140000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.h */ = {isa = PBXBuildFile; fileRef = 104491010449101044910000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.h */; settings = { COMPILER_FLAGS = ""; }; };
+1045D001045D001045D00000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_mainwindow.h */ = {isa = PBXBuildFile; fileRef = 10454D010454D010454D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_mainwindow.h */; settings = { COMPILER_FLAGS = ""; }; };
+104623010462301046230000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_ProbeCalibrationWidget.h */ = {isa = PBXBuildFile; fileRef = 104603010460301046030000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_ProbeCalibrationWidget.h */; settings = { COMPILER_FLAGS = ""; }; };
+10473A010473A010473A0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx */ = {isa = PBXBuildFile; fileRef = 1046BF01046BF01046BF0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx */; settings = { COMPILER_FLAGS = ""; }; };
+1047F301047F301047F30000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx */ = {isa = PBXBuildFile; fileRef = 104773010477301047730000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx */; settings = { COMPILER_FLAGS = ""; }; };
+10484B010484B010484B0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx */ = {isa = PBXBuildFile; fileRef = 104826010482601048260000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx */; settings = { COMPILER_FLAGS = ""; }; };
+10490B010490B010490B0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx */ = {isa = PBXBuildFile; fileRef = 1048EC01048EC01048EC0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx */; settings = { COMPILER_FLAGS = ""; }; };
+104A280104A280104A280000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx */ = {isa = PBXBuildFile; fileRef = 1049A301049A301049A30000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx */; settings = { COMPILER_FLAGS = ""; }; };
+104AA40104AA40104AA40000 /* /Users/zian/Proyectos/US_Probe_Calibration/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 501BD0501BD0501BD0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+104B5F0104B5F0104B5F0000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.ui */ = {isa = PBXBuildFile; fileRef = 104AE00104AE00104AE00000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.ui */; settings = { COMPILER_FLAGS = ""; }; };
+104C140104C140104C140000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.ui */ = {isa = PBXBuildFile; fileRef = 104B970104B970104B970000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.ui */; settings = { COMPILER_FLAGS = ""; }; };
+104CD00104CD00104CD00000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx.rule */ = {isa = PBXBuildFile; fileRef = 104C4C0104C4C0104C4C0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx.rule */; settings = { COMPILER_FLAGS = ""; }; };
+104D2A0104D2A0104D2A0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx.rule */ = {isa = PBXBuildFile; fileRef = 104D090104D090104D090000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx.rule */; settings = { COMPILER_FLAGS = ""; }; };
+104DE30104DE30104DE30000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx.rule */ = {isa = PBXBuildFile; fileRef = 104DC00104DC00104DC00000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx.rule */; settings = { COMPILER_FLAGS = ""; }; };
+104E9B0104E9B0104E9B0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx.rule */ = {isa = PBXBuildFile; fileRef = 104E7E0104E7E0104E7E0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx.rule */; settings = { COMPILER_FLAGS = ""; }; };
+104FBC0104FBC0104FBC0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx.rule */ = {isa = PBXBuildFile; fileRef = 104F390104F390104F390000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx.rule */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              5B5B205B5B205B5B20000000 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              5B5C205B5C205B5C20000000 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              5B5FB05B5FB05B5FB0000000 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              5B63E05B63E05B63E0000000 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              5B67F05B67F05B67F0000000 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              106DB50106DB50106DB50000 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5B79105B79105B7910000000 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 10503C010503C010503C0000;
+                     remoteInfo = US_Probe_Calibration;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+501BD0501BD0501BD0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+501640501640501640000000 /* /Users/zian/Proyectos/US_Probe_Calibration/main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "main.cpp"; path = "main.cpp"; sourceTree = SOURCE_ROOT; };
+500D60500D60500D60000000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "mainwindow.cpp"; path = "mainwindow.cpp"; sourceTree = SOURCE_ROOT; };
+5004B05004B05004B0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "QVTKImageWidget.cpp"; path = "QVTKImageWidget.cpp"; sourceTree = SOURCE_ROOT; };
+103FED0103FED0103FED0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "QVTKImageWidgetCommand.cpp"; path = "QVTKImageWidgetCommand.cpp"; sourceTree = SOURCE_ROOT; };
+104077010407701040770000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "ProbeCalibrationWidget.cpp"; path = "ProbeCalibrationWidget.cpp"; sourceTree = SOURCE_ROOT; };
+104112010411201041120000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "CalibrationPointsSquaresFunction.cpp"; path = "CalibrationPointsSquaresFunction.cpp"; sourceTree = SOURCE_ROOT; };
+1041CA01041CA01041CA0000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "mainwindow.h"; path = "mainwindow.h"; sourceTree = SOURCE_ROOT; };
+10427C010427C010427C0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "QVTKImageWidget.h"; path = "QVTKImageWidget.h"; sourceTree = SOURCE_ROOT; };
+10432D010432D010432D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "QVTKImageWidgetCommand.h"; path = "QVTKImageWidgetCommand.h"; sourceTree = SOURCE_ROOT; };
+1043DD01043DD01043DD0000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "ProbeCalibrationWidget.h"; path = "ProbeCalibrationWidget.h"; sourceTree = SOURCE_ROOT; };
+104491010449101044910000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "CalibrationPointsSquaresFunction.h"; path = "CalibrationPointsSquaresFunction.h"; sourceTree = SOURCE_ROOT; };
+10454D010454D010454D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_mainwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "ui_mainwindow.h"; path = "build_xcode/ui_mainwindow.h"; sourceTree = SOURCE_ROOT; };
+104603010460301046030000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_ProbeCalibrationWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "ui_ProbeCalibrationWidget.h"; path = "build_xcode/ui_ProbeCalibrationWidget.h"; sourceTree = SOURCE_ROOT; };
+1046BF01046BF01046BF0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "moc_mainwindow.cxx"; path = "build_xcode/moc_mainwindow.cxx"; sourceTree = SOURCE_ROOT; };
+104773010477301047730000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "moc_QVTKImageWidget.cxx"; path = "build_xcode/moc_QVTKImageWidget.cxx"; sourceTree = SOURCE_ROOT; };
+104826010482601048260000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "moc_QVTKImageWidgetCommand.cxx"; path = "build_xcode/moc_QVTKImageWidgetCommand.cxx"; sourceTree = SOURCE_ROOT; };
+1048EC01048EC01048EC0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "moc_ProbeCalibrationWidget.cxx"; path = "build_xcode/moc_ProbeCalibrationWidget.cxx"; sourceTree = SOURCE_ROOT; };
+1049A301049A301049A30000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "moc_CalibrationPointsSquaresFunction.cxx"; path = "build_xcode/moc_CalibrationPointsSquaresFunction.cxx"; sourceTree = SOURCE_ROOT; };
+104AE00104AE00104AE00000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.ui */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "mainwindow.ui"; path = "mainwindow.ui"; sourceTree = SOURCE_ROOT; };
+104B970104B970104B970000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.ui */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "ProbeCalibrationWidget.ui"; path = "ProbeCalibrationWidget.ui"; sourceTree = SOURCE_ROOT; };
+104C4C0104C4C0104C4C0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "moc_mainwindow.cxx.rule"; path = "build_xcode/moc_mainwindow.cxx.rule"; sourceTree = SOURCE_ROOT; };
+104D090104D090104D090000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "moc_QVTKImageWidget.cxx.rule"; path = "build_xcode/moc_QVTKImageWidget.cxx.rule"; sourceTree = SOURCE_ROOT; };
+104DC00104DC00104DC00000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "moc_QVTKImageWidgetCommand.cxx.rule"; path = "build_xcode/moc_QVTKImageWidgetCommand.cxx.rule"; sourceTree = SOURCE_ROOT; };
+104E7E0104E7E0104E7E0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "moc_ProbeCalibrationWidget.cxx.rule"; path = "build_xcode/moc_ProbeCalibrationWidget.cxx.rule"; sourceTree = SOURCE_ROOT; };
+104F390104F390104F390000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx.rule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode; name = "moc_CalibrationPointsSquaresFunction.cxx.rule"; path = "build_xcode/moc_CalibrationPointsSquaresFunction.cxx.rule"; sourceTree = SOURCE_ROOT; };
+106D400106D400106D400000 /* US_Probe_Calibration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = US_Probe_Calibration; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              5B6C405B6C405B6C40000000  = {
+                     isa = PBXGroup;
+                     children = (
+                            5B6F305B6F305B6F30000000 /* Sources */,
+                            5B73305B73305B7330000000 /* Resources */,
+                            5B77305B77305B7730000000 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              5B6F305B6F305B6F30000000 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5B7A905B7A905B7A90000000 /* ALL_BUILD */,
+                            5B41E05B41E05B41E0000000 /* US_Probe_Calibration */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              5B73305B73305B7330000000 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              5B7A905B7A905B7A90000000 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5B3C505B3C505B3C50000000 /* CMake Rules */,
+                            501BD0501BD0501BD0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              5B3C505B3C505B3C50000000 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              5B41E05B41E05B41E0000000 /* US_Probe_Calibration */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5B22305B22305B2230000000 /* Source Files */,
+                            5BCEF05BCEF05BCEF0000000 /* Header Files */,
+                            5BE2105BE2105BE210000000 /* Generated */,
+                            50E76050E76050E760000000 /* Resources */,
+                            50ED0050ED0050ED00000000 /* CMake Rules */,
+                            501BD0501BD0501BD0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/CMakeLists.txt */,
+                     );
+                     name = US_Probe_Calibration;
+                     sourceTree = "<group>";
+              };
+              5B22305B22305B2230000000 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            501640501640501640000000 /* /Users/zian/Proyectos/US_Probe_Calibration/main.cpp */,
+                            500D60500D60500D60000000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.cpp */,
+                            5004B05004B05004B0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.cpp */,
+                            103FED0103FED0103FED0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.cpp */,
+                            104077010407701040770000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.cpp */,
+                            104112010411201041120000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              5BCEF05BCEF05BCEF0000000 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1041CA01041CA01041CA0000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.h */,
+                            10427C010427C010427C0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.h */,
+                            10432D010432D010432D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.h */,
+                            1043DD01043DD01043DD0000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.h */,
+                            104491010449101044910000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              5BE2105BE2105BE210000000 /* Generated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            10454D010454D010454D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_mainwindow.h */,
+                            104603010460301046030000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/ui_ProbeCalibrationWidget.h */,
+                            1046BF01046BF01046BF0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx */,
+                            104773010477301047730000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx */,
+                            104826010482601048260000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx */,
+                            1048EC01048EC01048EC0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx */,
+                            1049A301049A301049A30000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx */,
+                     );
+                     name = Generated;
+                     sourceTree = "<group>";
+              };
+              50E76050E76050E760000000 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            104AE00104AE00104AE00000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.ui */,
+                            104B970104B970104B970000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.ui */,
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              50ED0050ED0050ED00000000 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            104C4C0104C4C0104C4C0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx.rule */,
+                            104D090104D090104D090000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx.rule */,
+                            104DC00104DC00104DC00000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx.rule */,
+                            104E7E0104E7E0104E7E0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx.rule */,
+                            104F390104F390104F390000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              5B77305B77305B7730000000 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            106D400106D400106D400000 /* US_Probe_Calibration */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              10503C010503C010503C0000 /* US_Probe_Calibration */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 10504C010504C010504C0000 /* Build configuration list for PBXNativeTarget "US_Probe_Calibration" */;
+                     buildPhases = (
+                            105073010507301050730000 /* CMake ReRun */,
+                            105137010513701051370000 /* CMake Rules */,
+                            104FF50104FF50104FF50000 /* Sources */,
+                            1051B101051B101051B10000 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                     );
+                     name = US_Probe_Calibration;
+                     productName = US_Probe_Calibration;
+                     productReference = 106D400106D400106D400000 /* US_Probe_Calibration */;
+                     productType = "com.apple.product-type.tool";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              5B79105B79105B7910000000 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 50FD3050FD3050FD30000000 /* Build configuration list for PBXProject  "US_Probe_Calibration" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            5B5C205B5C205B5C20000000 /* Debug */,
+                            5B5FB05B5FB05B5FB0000000 /* Release */,
+                            5B63E05B63E05B63E0000000 /* MinSizeRel */,
+                            5B67F05B67F05B67F0000000 /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 5B6C405B6C405B6C40000000;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            511330511330511330000000 /* ALL_BUILD */,
+                            10503C010503C010503C0000 /* US_Probe_Calibration */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              513CE0513CE0513CE0000000 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+              };
+              5115D05115D05115D0000000 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeScripts/ReRunCMake.make";
+              };
+              511C90511C90511C90000000 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+              };
+              105073010507301050730000 /* CMake ReRun */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake ReRun";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeScripts/ReRunCMake.make";
+              };
+              105137010513701051370000 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeScripts/US_Probe_Calibration_cmakeRulesBuildPhase.make$CONFIGURATION all";
+              };
+              1051B101051B101051B10000 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/zian/Proyectos/US_Probe_Calibration/build_xcode -f /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/CMakeScripts/US_Probe_Calibration_postBuildPhase.make$CONFIGURATION all";
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              104FF50104FF50104FF50000 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            501090501090501090000000 /* /Users/zian/Proyectos/US_Probe_Calibration/main.cpp */,
+                            5007B05007B05007B0000000 /* /Users/zian/Proyectos/US_Probe_Calibration/mainwindow.cpp */,
+                            103FBF0103FBF0103FBF0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidget.cpp */,
+                            10404D010404D010404D0000 /* /Users/zian/Proyectos/US_Probe_Calibration/QVTKImageWidgetCommand.cpp */,
+                            1040DB01040DB01040DB0000 /* /Users/zian/Proyectos/US_Probe_Calibration/ProbeCalibrationWidget.cpp */,
+                            104131010413101041310000 /* /Users/zian/Proyectos/US_Probe_Calibration/CalibrationPointsSquaresFunction.cpp */,
+                            10473A010473A010473A0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_mainwindow.cxx */,
+                            1047F301047F301047F30000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidget.cxx */,
+                            10484B010484B010484B0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_QVTKImageWidgetCommand.cxx */,
+                            10490B010490B010490B0000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_ProbeCalibrationWidget.cxx */,
+                            104A280104A280104A280000 /* /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/moc_CalibrationPointsSquaresFunction.cxx */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              106E000106E000106E000000 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 10503C010503C010503C0000 /* US_Probe_Calibration */;
+                     targetProxy = 106DB50106DB50106DB50000 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              50FEC050FEC050FEC0000000 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Developer/SDKs/MacOSX10.6.sdk";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/build;
+                     };
+                     name = Debug;
+              };
+              5100C05100C05100C0000000 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Developer/SDKs/MacOSX10.6.sdk";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/build;
+                     };
+                     name = Release;
+              };
+              510320510320510320000000 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Developer/SDKs/MacOSX10.6.sdk";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/build;
+                     };
+                     name = MinSizeRel;
+              };
+              5104C05104C05104C0000000 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Developer/SDKs/MacOSX10.6.sdk";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/build;
+                     };
+                     name = RelWithDebInfo;
+              };
+              512940512940512940000000 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              521780521780521780000000 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_NO_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              519530519530519530000000 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_NO_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              508A60508A60508A60000000 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_NO_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              1050A601050A601050A60000 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CONFIGURATION_BUILD_DIR = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/Debug;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /opt/kitware/InsightToolkit-build/bin/$(CONFIGURATION) /opt/kitware/InsightToolkit-build/bin";
+                            OTHER_CFLAGS = "  -Wall -Wno-uninitialized -Wno-unused-parameter -no-cpp-precomp      ";
+                            OTHER_CPLUSPLUSFLAGS = "  -ftemplate-depth-50 -Wall -Wno-deprecated -no-cpp-precomp -msse2  -Wno-deprecated     ";
+                            OTHER_LDFLAGS = "    -Wl,-search_paths_first -Wl,-headerpad_max_install_names /opt/kitware/VTK-build/bin/libQVTK.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGenericFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGeovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCharts.5.8.0.dylib -lITKAlgorithms -lITKStatistics -lITKFEM -framework QtWebKit -framework phonon -framework QtXmlPatterns -framework QtNetwork /opt/kitware/VTK-build/bin/libvtkproj4.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkverdict.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksys.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkDICOMParser.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF_cxx.dylib /opt/kitware/VTK-build/bin/libvtkmetaio.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksqlite.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkpng.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkzlib.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkjpeg.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtktiff.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexpat.5.8.0.dylib -lobjc /opt/kitware/VTK-build/bin/libvtkfreetype.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexoIIc.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtklibxml2.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkalglib.5.8.0.dylib -framework QtGui -framework QtSql -framework QtCore /opt/kitware/VTK-build/bin/libvtkftgl.5.8.0.dylib -litkNetlibSlatec -lITKNumerics -lITKBasicFilters -lITKIO -lITKNrrdIO -litkgdcm -litkjpeg12 -litkjpeg16 -litkopenjpeg -framework System -litkpng -litktiff -litkjpeg8 -lITKSpatialObject -lITKCommon -litkvnl_inst -litkvnl_algo -litkv3p_netlib -litkvnl -litkvcl -litkv3p_lsqr -lm -lpthread -lITKMetaIO -litksys -lITKDICOMParser -lITKEXPAT -lITKniftiio -lm -lITKznz -litkzlib";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = US_Probe_Calibration;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              10525B010525B010525B0000 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CONFIGURATION_BUILD_DIR = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/Release;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_NO_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /opt/kitware/InsightToolkit-build/bin/$(CONFIGURATION) /opt/kitware/InsightToolkit-build/bin";
+                            OTHER_CFLAGS = "  -Wall -Wno-uninitialized -Wno-unused-parameter -no-cpp-precomp      -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "  -ftemplate-depth-50 -Wall -Wno-deprecated -no-cpp-precomp -msse2  -Wno-deprecated     -DNDEBUG  ";
+                            OTHER_LDFLAGS = "    -Wl,-search_paths_first -Wl,-headerpad_max_install_names /opt/kitware/VTK-build/bin/libQVTK.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGenericFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGeovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCharts.5.8.0.dylib -lITKAlgorithms -lITKStatistics -lITKFEM -framework QtWebKit -framework phonon -framework QtXmlPatterns -framework QtNetwork /opt/kitware/VTK-build/bin/libvtkproj4.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkverdict.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksys.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkDICOMParser.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF_cxx.dylib /opt/kitware/VTK-build/bin/libvtkmetaio.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksqlite.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkpng.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkzlib.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkjpeg.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtktiff.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexpat.5.8.0.dylib -lobjc /opt/kitware/VTK-build/bin/libvtkfreetype.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexoIIc.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtklibxml2.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkalglib.5.8.0.dylib -framework QtGui -framework QtSql -framework QtCore /opt/kitware/VTK-build/bin/libvtkftgl.5.8.0.dylib -litkNetlibSlatec -lITKNumerics -lITKBasicFilters -lITKIO -lITKNrrdIO -litkgdcm -litkjpeg12 -litkjpeg16 -litkopenjpeg -framework System -litkpng -litktiff -litkjpeg8 -lITKSpatialObject -lITKCommon -litkvnl_inst -litkvnl_algo -litkv3p_netlib -litkvnl -litkvcl -litkv3p_lsqr -lm -lpthread -lITKMetaIO -litksys -lITKDICOMParser -lITKEXPAT -lITKniftiio -lm -lITKznz -litkzlib";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = US_Probe_Calibration;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              10590B010590B010590B0000 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CONFIGURATION_BUILD_DIR = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/MinSizeRel;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_NO_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /opt/kitware/InsightToolkit-build/bin/$(CONFIGURATION) /opt/kitware/InsightToolkit-build/bin";
+                            OTHER_CFLAGS = "  -Wall -Wno-uninitialized -Wno-unused-parameter -no-cpp-precomp      -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "  -ftemplate-depth-50 -Wall -Wno-deprecated -no-cpp-precomp -msse2  -Wno-deprecated     -DNDEBUG  ";
+                            OTHER_LDFLAGS = "    -Wl,-search_paths_first -Wl,-headerpad_max_install_names /opt/kitware/VTK-build/bin/libQVTK.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGenericFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGeovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCharts.5.8.0.dylib -lITKAlgorithms -lITKStatistics -lITKFEM -framework QtWebKit -framework phonon -framework QtXmlPatterns -framework QtNetwork /opt/kitware/VTK-build/bin/libvtkproj4.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkverdict.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksys.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkDICOMParser.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF_cxx.dylib /opt/kitware/VTK-build/bin/libvtkmetaio.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksqlite.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkpng.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkzlib.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkjpeg.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtktiff.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexpat.5.8.0.dylib -lobjc /opt/kitware/VTK-build/bin/libvtkfreetype.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexoIIc.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtklibxml2.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkalglib.5.8.0.dylib -framework QtGui -framework QtSql -framework QtCore /opt/kitware/VTK-build/bin/libvtkftgl.5.8.0.dylib -litkNetlibSlatec -lITKNumerics -lITKBasicFilters -lITKIO -lITKNrrdIO -litkgdcm -litkjpeg12 -litkjpeg16 -litkopenjpeg -framework System -litkpng -litktiff -litkjpeg8 -lITKSpatialObject -lITKCommon -litkvnl_inst -litkvnl_algo -litkv3p_netlib -litkvnl -litkvcl -litkv3p_lsqr -lm -lpthread -lITKMetaIO -litksys -lITKDICOMParser -lITKEXPAT -lITKniftiio -lm -lITKznz -litkzlib";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = US_Probe_Calibration;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              105FBE0105FBE0105FBE0000 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CONFIGURATION_BUILD_DIR = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            FRAMEWORK_SEARCH_PATHS = (/opt/QtSDK/Desktop/Qt/474/gcc/lib, );
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)\"'", QT_GUI_LIB, QT_CORE_LIB, QT_NO_DEBUG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/opt/kitware/InsightToolkit-3.20.1/Utilities/gdcm/src", "/opt/kitware/InsightToolkit-build/Utilities/gdcm", "/opt/kitware/InsightToolkit-build/Utilities/vxl/core", "/opt/kitware/InsightToolkit-build/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-build/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/core", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/vcl", "/opt/kitware/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/Statistics", "/opt/kitware/InsightToolkit-3.20.1/Utilities", "/opt/kitware/InsightToolkit-build/Utilities", "/opt/kitware/InsightToolkit-3.20.1/Utilities/itkExtHdrs", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/znzlib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/nifti/niftilib", "/opt/kitware/InsightToolkit-3.20.1/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/expat", "/opt/kitware/InsightToolkit-build/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-3.20.1/Utilities/DICOMParser", "/opt/kitware/InsightToolkit-build/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/NrrdIO", "/opt/kitware/InsightToolkit-3.20.1/Utilities/MetaIO", "/opt/kitware/InsightToolkit-3.20.1/Code/SpatialObject", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics/FEM", "/opt/kitware/InsightToolkit-3.20.1/Code/IO", "/opt/kitware/InsightToolkit-3.20.1/Code/Numerics", "/opt/kitware/InsightToolkit-3.20.1/Code/Common", "/opt/kitware/InsightToolkit-3.20.1/Code/BasicFilters", "/opt/kitware/InsightToolkit-3.20.1/Code/Algorithms", "/opt/kitware/InsightToolkit-build", "/opt/kitware/VTK-build", "/opt/kitware/VTK-build/Common", "/opt/kitware/VTK-build/Utilities", "/opt/kitware/VTK-build/VolumeRendering", "/opt/kitware/VTK-build/Rendering", "/opt/kitware/VTK-build/Charts", "/opt/kitware/VTK-build/Utilities/vtkalglib", /opt/kitware/VTK/Infovis, /opt/kitware/VTK/Geovis, /opt/kitware/VTK/Views, /opt/kitware/VTK/VolumeRendering, /opt/kitware/VTK/Hybrid, /opt/kitware/VTK/Widgets, /opt/kitware/VTK/Rendering, /opt/kitware/VTK/Charts, /opt/kitware/VTK/Rendering/Testing/Cxx, /opt/kitware/VTK/IO, /opt/kitware/VTK/Imaging, /opt/kitware/VTK/Graphics, /opt/kitware/VTK/GenericFiltering, /opt/kitware/VTK/Filtering, /opt/kitware/VTK/Common, /opt/kitware/VTK/Utilities, /opt/kitware/VTK/Common/Testing/Cxx, "/opt/kitware/VTK-build/Utilities/vtklibproj4", /opt/kitware/VTK/Utilities/vtklibproj4, "/opt/kitware/VTK-build/Utilities/DICOMParser", /opt/kitware/VTK/Utilities/DICOMParser, "/opt/kitware/VTK-build/Utilities/vtkfreetype/include", /opt/kitware/VTK/Utilities/vtkfreetype/include, "/opt/kitware/VTK-build/Utilities/MaterialLibrary", /opt/kitware/VTK/Utilities/MaterialLibrary, "/opt/kitware/VTK-build/Utilities/verdict", /opt/kitware/VTK/Utilities/verdict, "/opt/kitware/VTK-build/Utilities/vtkhdf5", /opt/kitware/VTK/Utilities/vtkhdf5, "/opt/kitware/VTK-build/Utilities/vtkhdf5/src", /opt/kitware/VTK/Utilities/vtkhdf5/src, /opt/kitware/VTK/Utilities/utf8/source, /opt/kitware/VTK/GUISupport/Qt, "/opt/kitware/VTK-build/GUISupport/Qt", /opt/kitware/VTK/GUISupport/Qt/Chart, "/opt/kitware/VTK-build/GUISupport/Qt/Chart", /opt/kitware/VTK/Utilities/vtkalglib, /opt/QtSDK/Desktop/Qt/474/gcc/include, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtGui, /opt/QtSDK/Desktop/Qt/474/gcc/include/QtCore, /Users/zian/Proyectos/US_Probe_Calibration/build_xcode, /Users/zian/Proyectos/US_Probe_Calibration, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /opt/kitware/InsightToolkit-build/bin/$(CONFIGURATION) /opt/kitware/InsightToolkit-build/bin";
+                            OTHER_CFLAGS = "  -Wall -Wno-uninitialized -Wno-unused-parameter -no-cpp-precomp          ";
+                            OTHER_CPLUSPLUSFLAGS = "  -ftemplate-depth-50 -Wall -Wno-deprecated -no-cpp-precomp -msse2  -Wno-deprecated         ";
+                            OTHER_LDFLAGS = "    -Wl,-search_paths_first -Wl,-headerpad_max_install_names /opt/kitware/VTK-build/bin/libQVTK.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGenericFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGeovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCharts.5.8.0.dylib -lITKAlgorithms -lITKStatistics -lITKFEM -framework QtWebKit -framework phonon -framework QtXmlPatterns -framework QtNetwork /opt/kitware/VTK-build/bin/libvtkproj4.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkViews.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkInfovis.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkWidgets.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkVolumeRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkHybrid.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkRendering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkImaging.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkGraphics.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkverdict.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkIO.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkFiltering.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkCommon.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksys.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkDICOMParser.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkNetCDF_cxx.dylib /opt/kitware/VTK-build/bin/libvtkmetaio.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtksqlite.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkpng.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkzlib.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkjpeg.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtktiff.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexpat.5.8.0.dylib -lobjc /opt/kitware/VTK-build/bin/libvtkfreetype.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkexoIIc.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtklibxml2.5.8.0.dylib /opt/kitware/VTK-build/bin/libvtkalglib.5.8.0.dylib -framework QtGui -framework QtSql -framework QtCore /opt/kitware/VTK-build/bin/libvtkftgl.5.8.0.dylib -litkNetlibSlatec -lITKNumerics -lITKBasicFilters -lITKIO -lITKNrrdIO -litkgdcm -litkjpeg12 -litkjpeg16 -litkopenjpeg -framework System -litkpng -litktiff -litkjpeg8 -lITKSpatialObject -lITKCommon -litkvnl_inst -litkvnl_algo -litkv3p_netlib -litkvnl -litkvcl -litkv3p_lsqr -lm -lpthread -lITKMetaIO -litksys -lITKDICOMParser -lITKEXPAT -lITKniftiio -lm -lITKznz -litkzlib";
+                            OTHER_REZFLAGS = "";
+                            PREBINDING = NO;
+                            PRODUCT_NAME = US_Probe_Calibration;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/zian/Proyectos/US_Probe_Calibration/build_xcode;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              50FD3050FD3050FD30000000 /* Build configuration list for PBXProject  "US_Probe_Calibration" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            50FEC050FEC050FEC0000000 /* Debug */,
+                            5100C05100C05100C0000000 /* Release */,
+                            510320510320510320000000 /* MinSizeRel */,
+                            5104C05104C05104C0000000 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              5123F05123F05123F0000000 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            512940512940512940000000 /* Debug */,
+                            521780521780521780000000 /* Release */,
+                            519530519530519530000000 /* MinSizeRel */,
+                            508A60508A60508A60000000 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              10504C010504C010504C0000 /* Build configuration list for PBXNativeTarget "US_Probe_Calibration" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1050A601050A601050A60000 /* Debug */,
+                            10525B010525B010525B0000 /* Release */,
+                            10590B010590B010590B0000 /* MinSizeRel */,
+                            105FBE0105FBE0105FBE0000 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 5B79105B79105B7910000000;
+}
