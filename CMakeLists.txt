@@ -63,14 +63,6 @@ TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES
 
 
 
-SET(TestSrc TestLM.cpp CalibrationPointsSquaresFunction.cpp)
-SET(TestHeaders CalibrationPointsSquaresFunction.h)
-
-ADD_EXECUTABLE(TestLM TestLM.cpp ${TestSrcs} ${TestHeaders})
-TARGET_LINK_LIBRARIES(TestLM ${ITK_LIBRARIES})
-
-
-
 
 
 

@@ -8,6 +8,10 @@
 
 #include <iostream>
 #include "CalibrationPointsSquaresFunction.h"
+#include "LSQRRecipes/common/Frame.h"
+#include "LSQRRecipes/common/Point2D.h"
+#include "LSQRRecipes/parametersEstimators/SinglePointTargetUSCalibrationParametersEstimator.h"
+
 
 #include <vector>
 #include <vnl/vnl_quaternion.h>
@@ -23,19 +27,19 @@ int main( int argc, char *argv[] )
     
     vnl_matrix<int> points(point_size, 2);
     points[0][0] = 199;
-    points[0][1] = 168;
+    points[0][1] = 164;
     points[1][0] = 211;
-    points[1][1] = 197;
-    points[2][0] = 82;
-    points[2][1] = 177;
+    points[1][1] = 193;
+    points[2][0] = 84;
+    points[2][1] = 175;
     points[3][0] = 226;
-    points[3][1] = 185;
-    points[4][0] = 188;
-    points[4][1] = 204;
-    points[5][0] = 327;
-    points[5][1] = 217;
-    points[6][0] = 255;
-    points[6][1] = 181;
+    points[3][1] = 180;
+    points[4][0] = 190;
+    points[4][1] = 200;
+    points[5][0] = 326;
+    points[5][1] = 212;
+    points[6][0] = 257;
+    points[6][1] = 179;
     
     
     vnl_matrix<double> rotations(point_size, 4);
@@ -91,7 +95,8 @@ int main( int argc, char *argv[] )
     for (int i = 0; i < point_size; i++) {            
         
         // the given parameters is [0]=scale factor, [1]=x, [2]=y, [3]=z                       
-        vnl_quaternion<double> quaternion(rotations[i][1], rotations[i][2], rotations[i][3], rotations[i][0]);        
+        vnl_quaternion<double> quaternion(rotations[i][1], rotations[i][2], 
+                                          rotations[i][3], rotations[i][0]);        
         vnl_matrix<double> transformation = quaternion.rotation_matrix_transpose_4();
         transformation = transformation.transpose();
         
@@ -111,25 +116,33 @@ int main( int argc, char *argv[] )
     std::cout << std::endl;
 
     
-    std::cout << "\n " << "t0 - (0,0)" << transformationSet.at(0)[0][0] << "\n" << std::endl;
-    std::cout << "\n " << "t0 - (0,0)" << *transformationSet.at(0)[0][0] << "\n" << std::endl;
-    
-    std::cout << "\n " << "t1 - (0,0)" << transformationSet.at(1)[0][0] << "\n" << std::endl;
-    std::cout << "\n " << "t1 - (0,0)" << *transformationSet.at(1)[0][0] << "\n" << std::endl;
-    
-    
+//    std::cout << "\n " << "t0 - (0,0)" << transformationSet.at(0)[0][0] << "\n" << std::endl;
+//    std::cout << "\n " << "t0 - (0,0)" << *transformationSet.at(0)[0][0] << "\n" << std::endl;
 //    
-//    CalibrationPointsSquaresFunction optimizationFunction(&transformationSet, &points);        
-//    
-//    vnl_vector<double> x0(11);
-//    x0.fill(1.0);
-//    vnl_vector<double> x1 = x0.as_ref();
-//    vnl_levenberg_marquardt LM(optimizationFunction);
-//    LM.minimize(x1);
-//    
-//    LM.diagnose_outcome(cout);
-//    cout << "x1 = " << x1 << endl;
+//    std::cout << "\n " << "t1 - (0,0)" << transformationSet.at(1)[0][0] << "\n" << std::endl;
+//    std::cout << "\n " << "t1 - (0,0)" << *transformationSet.at(1)[0][0] << "\n" << std::endl;
+    
+    
+    
+    typedef lsqrRecipes::SingleUnknownPointTargetUSCalibrationParametersEstimator::DataType DataType; 
+    
+    std::vector<lsqrRecipes::Frame> transformations;
+    std::vector<lsqrRecipes::Point2D> imagePoints;
+    DataType dataElement;
+    std::vector< DataType > data;
     
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
