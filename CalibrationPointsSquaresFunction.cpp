@@ -59,8 +59,8 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
         cTt.put(0, 2, (cos(w_1x) * sin(w_1y) * cos(w_1z)) + (sin(w_1x) * sin(w_1z)));
         cTt.put(0, 3, t_1x);
         cTt.put(1, 0, sin(w_1x) * cos(w_1y));
-        cTt.put(1, 1, (sin(w_1x) * sin(w_1y) * sin(w_1z)) - (cos(w_1x) * cos(w_1z)));
-        cTt.put(1, 2, (sin(w_1x) * sin(w_1y) * cos(w_1z)) + (cos(w_1x) * sin(w_1z)));
+        cTt.put(1, 1, (sin(w_1x) * sin(w_1y) * sin(w_1z)) + (cos(w_1x) * cos(w_1z)));
+        cTt.put(1, 2, (sin(w_1x) * sin(w_1y) * cos(w_1z)) - (cos(w_1x) * sin(w_1z)));
         cTt.put(1, 3, t_1y);
         cTt.put(2, 0, -sin(w_1y));
         cTt.put(2, 1, cos(w_1y) * sin(w_1z));
@@ -94,8 +94,8 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
         rTp.put(0, 2, (cos(w_3x) * sin(w_3y) * cos(w_3z)) + (sin(w_3x) * sin(w_3z)));
         rTp.put(0, 3, t_3x);
         rTp.put(1, 0, sin(w_3x) * cos(w_3y));
-        rTp.put(1, 1, (sin(w_3x) * sin(w_3y) * sin(w_3z)) - (cos(w_3x) * cos(w_3z)));
-        rTp.put(1, 2, (sin(w_3x) * sin(w_3y) * cos(w_3z)) + (cos(w_3x) * sin(w_3z)));
+        rTp.put(1, 1, (sin(w_3x) * sin(w_3y) * sin(w_3z)) + (cos(w_3x) * cos(w_3z)));
+        rTp.put(1, 2, (sin(w_3x) * sin(w_3y) * cos(w_3z)) - (cos(w_3x) * sin(w_3z)));
         rTp.put(1, 3, t_3y);
         rTp.put(2, 0, -sin(w_3y));
         rTp.put(2, 1, cos(w_3y) * sin(w_3z));
