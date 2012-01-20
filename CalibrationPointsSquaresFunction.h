@@ -18,7 +18,7 @@ class CalibrationPointsSquaresFunction : public vnl_least_squares_function {
 public:
     
     CalibrationPointsSquaresFunction
-    (std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * _points);
+    (std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * points);
     
     virtual ~CalibrationPointsSquaresFunction();
     
@@ -26,9 +26,9 @@ public:
 
 private:
     
-    std::vector<vnl_matrix<double> *> *data;
+    std::vector<vnl_matrix<double> *> * _data;
     
-    vnl_matrix<int> * points;
+    vnl_matrix<int> * _points;
     
 };
 

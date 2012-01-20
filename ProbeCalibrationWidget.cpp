@@ -454,8 +454,8 @@ void ProbeCalibrationWidget::calibrate()
     vnl_levenberg_marquardt LM(optimizationFunction);    
     LM.set_verbose(TRUE);
    
-    LM.set_f_tolerance(10e-8);
-    LM.set_x_tolerance(10e-8);
+    LM.set_f_tolerance(10e-10);
+    LM.set_x_tolerance(10e-10);
     
     // max iterations 5000
     LM.set_max_function_evals(5000);

@@ -12,11 +12,11 @@
 #include <iostream>
 
 CalibrationPointsSquaresFunction::
-CalibrationPointsSquaresFunction(std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * _points) :
-vnl_least_squares_function(11, 3 * _points->rows(), vnl_least_squares_function::no_gradient)
+CalibrationPointsSquaresFunction(std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * points) :
+vnl_least_squares_function(11, 3 * points->rows(), vnl_least_squares_function::no_gradient)
 {
-    this->data = transformationSet;
-    this->points = _points;
+    this->_data = transformationSet;
+    this->_points = points;
 }
 
 CalibrationPointsSquaresFunction::~CalibrationPointsSquaresFunction() 
@@ -51,8 +51,8 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
     vnl_matrix<double> xP(4,1);
     
     
-    for (unsigned int i = 0; i < data->size(); i++) {
-        vnl_matrix<double> * transformation = data->at(i);    
+    for (unsigned int i = 0; i < _data->size(); i++) {
+        vnl_matrix<double> * transformation = _data->at(i);    
         
         cTt.put(0, 0, cos(w_1x) * cos(w_1y));
         cTt.put(0, 1, (cos(w_1x) * sin(w_1y) * sin(w_1z)) - (sin(w_1x) * cos(w_1z)));
@@ -106,8 +106,8 @@ void CalibrationPointsSquaresFunction::f(vnl_vector<double> const &x, vnl_vector
         rTp.put(3, 2, 0);
         rTp.put(3, 3, 1);
         
-        xP.put(0, 0, s_x * points->get(i, 0));
-        xP.put(1, 0, s_y * points->get(i, 1));
+        xP.put(0, 0, s_x * _points->get(i, 0));
+        xP.put(1, 0, s_y * _points->get(i, 1));
         xP.put(2, 0, 1);
         xP.put(3, 0, 1);
         
