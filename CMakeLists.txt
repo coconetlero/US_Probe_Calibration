@@ -21,6 +21,18 @@ ELSE(VTK_FOUND)
 ENDIF(VTK_FOUND)
 
 
+
+# Find the LSQRRecipies for calibration
+FIND_PACKAGE(LSQRRecipes)
+IF(LSQRRecipes_FOUND)
+    INCLUDE(${LSQRRecipes_USE_FILE})
+ELSE(LSQRRecipes_FOUND)
+	MESSAGE(FATAL_ERROR "Cannot build US Probe Calibration without LSQRRecipes.")   
+ENDIF(LSQRRecipes_FOUND)
+
+
+
+
 # Find QT 
 FIND_PACKAGE(Qt4 REQUIRED)
 INCLUDE( ${QT_USE_FILE} )
@@ -34,13 +46,27 @@ INCLUDE_DIRECTORIES(
 
  
 # Set your files and resources here
-SET(AppSrcs main.cpp mainwindow.cpp QVTKImageWidget.cpp QVTKImageWidgetCommand.cpp
-    ProbeCalibrationWidget.cpp CalibrationPointsSquaresFunction.cpp)
+SET(AppSrcs 
+    main.cpp 
+    mainwindow.cpp 
+    QVTKImageWidget.cpp 
+    QVTKImageWidgetCommand.cpp
+    ProbeCalibrationWidget.cpp 
+    CalibrationPointsSquaresFunction.cpp
+)
     
-SET(AppHeaders mainwindow.h QVTKImageWidget.h QVTKImageWidgetCommand.h ProbeCalibrationWidget.h
-    CalibrationPointsSquaresFunction.h)
+SET(AppHeaders 
+    mainwindow.h 
+    QVTKImageWidget.h 
+    QVTKImageWidgetCommand.h 
+    ProbeCalibrationWidget.h
+    CalibrationPointsSquaresFunction.h
+)
     
-SET(AppUI mainwindow.ui ProbeCalibrationWidget.ui)
+SET(AppUI 
+    mainwindow.ui 
+    ProbeCalibrationWidget.ui
+)
  
  
 # for generate qt aditional files 
@@ -59,7 +85,7 @@ SOURCE_GROUP("Generated" FILES
 )
  
 ADD_EXECUTABLE(US_Probe_Calibration ${AppSrcs} ${AppHeaders} ${UISrcs} ${MOCSrcs})
-TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES})
+TARGET_LINK_LIBRARIES(US_Probe_Calibration QVTK ${VTK_LIBRARIES} ${ITK_LIBRARIES} LSQRRecipes)
 
 
 
