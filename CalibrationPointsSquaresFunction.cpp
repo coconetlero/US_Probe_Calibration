@@ -12,8 +12,9 @@
 #include <iostream>
 
 CalibrationPointsSquaresFunction::
-CalibrationPointsSquaresFunction(std::vector<vnl_matrix<double> *> * transformationSet, vnl_matrix<int> * points) :
-vnl_least_squares_function(11, 3 * points->rows(), vnl_least_squares_function::no_gradient)
+CalibrationPointsSquaresFunction(std::vector<vnl_matrix<double> *> * transformationSet, 
+        vnl_matrix<int> * points) : vnl_least_squares_function(11, 3 * points->rows(), 
+        vnl_least_squares_function::no_gradient)
 {
     this->_data = transformationSet;
     this->_points = points;
